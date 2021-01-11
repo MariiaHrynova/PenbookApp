@@ -8564,11 +8564,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mary\\source\\repos\\Penbook\\Penbook\\Penbook.csproj",
+      "projectUniqueName": "C:\\GitHub\\PenbookApp\\Penbook\\Penbook\\Penbook.csproj",
       "projectName": "Penbook",
-      "projectPath": "C:\\Users\\Mary\\source\\repos\\Penbook\\Penbook\\Penbook.csproj",
+      "projectPath": "C:\\GitHub\\PenbookApp\\Penbook\\Penbook\\Penbook.csproj",
       "packagesPath": "C:\\Users\\Mary\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mary\\source\\repos\\Penbook\\Penbook\\obj\\",
+      "outputPath": "C:\\GitHub\\PenbookApp\\Penbook\\Penbook\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -8588,8 +8588,8 @@
       "frameworks": {
         "uap10.0.18362": {
           "projectReferences": {
-            "C:\\Users\\Mary\\source\\repos\\Penbook\\Penbook.Core\\Penbook.Core.csproj": {
-              "projectPath": "C:\\Users\\Mary\\source\\repos\\Penbook\\Penbook.Core\\Penbook.Core.csproj"
+            "C:\\GitHub\\PenbookApp\\Penbook\\Penbook.Core\\Penbook.Core.csproj": {
+              "projectPath": "C:\\GitHub\\PenbookApp\\Penbook\\Penbook.Core\\Penbook.Core.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "g83k4QAKJ6feCVMBSu/G+97Xicwh7ZOKH2/2Z0E5cOtk+nSsfBmijjxpHYXumOHk5c58F6DUGP0AKG35LDMn9w==",
+  "dgSpecHash": "Ljn1wj1sK5tuBqt3idcqIoAgvaYchmYjgjkohuLk3yXl3VQg0+A/U9+9soNzuvYtTDygN5vdUnXIOWglg1UHsg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mary\\source\\repos\\Penbook\\Penbook\\Penbook.csproj",
+  "projectFilePath": "C:\\GitHub\\PenbookApp\\Penbook\\Penbook\\Penbook.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.native.compiler\\2.2.8-rel-28605-00\\microsoft.net.native.compiler.2.2.8-rel-28605-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.uwpcoreruntimesdk\\2.2.10\\microsoft.net.uwpcoreruntimesdk.2.2.10.nupkg.sha512",

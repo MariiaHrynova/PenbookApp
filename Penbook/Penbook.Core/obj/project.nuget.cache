@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WwXszQeY4Insf8HDibT8QVjfDn69+9U7LQCJOgZSb3ugOyOiZxHZU/bZ2Xq34e+g9r+ZK0oKOCZcmoTmW2O+Zg==",
+  "dgSpecHash": "6LXVgAKSdJvIxk+AvuNE4MifbvcQLHgfGPRlgcOnOkoC7NlxrYLd8ulnNaLvISyOOD4n6rG5JuiK5v6jxfLqIg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mary\\source\\repos\\Penbook\\Penbook.Core\\Penbook.Core.csproj",
+  "projectFilePath": "C:\\GitHub\\PenbookApp\\Penbook\\Penbook.Core\\Penbook.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mary\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"

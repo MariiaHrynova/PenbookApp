@@ -8,7 +8,7 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Printing;
 
-namespace Penbook.Services.Ink.UndoRedo
+namespace Penbook.Services.Ink
 {
     public class InkPrintService
     {
@@ -20,29 +20,36 @@ namespace Penbook.Services.Ink.UndoRedo
 
         }
 
+        public bool CanPrint { get; internal set; }
+
         public virtual void RegisterForPrinting()
         {
-            //printDocument = new PrintDocument();
-            //printDocumentSource = printDocument.DocumentSource;
+            printDocument = new PrintDocument();
+            printDocumentSource = printDocument.DocumentSource;
             //printDocument.Paginate += CreatePrintPreviewPages;
             //printDocument.GetPreviewPage += GetPrintPreviewPage;
             //printDocument.AddPages += AddPrintPages;
 
-            //PrintManager printMan = PrintManager.GetForCurrentView();
+            PrintManager printMan = PrintManager.GetForCurrentView();
             //printMan.PrintTaskRequested += PrintTaskRequested;
         }
 
         //protected override void OnNavigatedTo(NavigationEventArgs e)
         //{
-        //    // Initialize common helper class and register for printing
-        //    printHelper = new PrintHelper(this);
-        //    printHelper.RegisterForPrinting();
+        //    Initialize common helper class and register for printing
+        //   printHelper = new PrintHelper(this);
+        //printHelper.RegisterForPrinting();
 
-        //    // Initialize print content for this scenario
+        //     Initialize print content for this scenario
         //    printHelper.PreparePrintContent(new PageToPrint());
 
-        //    // Tell the user how to print
+        //     Tell the user how to print
         //    MainPage.Current.NotifyUser("Print contract registered with customization, use the Print button to print.", NotifyType.StatusMessage);
         //}
+        internal Task PrintAsync()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
+

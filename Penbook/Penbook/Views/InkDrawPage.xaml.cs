@@ -31,7 +31,8 @@ namespace Penbook.Views
                     new InkCopyPasteService(strokeService),
                     new InkUndoRedoService(inkCanvas, strokeService),
                     new InkFileService(inkCanvas, strokeService),
-                    new InkZoomService(canvasScroll));
+                    new InkZoomService(canvasScroll),
+                    new InkPrintService());
             };
         }
 

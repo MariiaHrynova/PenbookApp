@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>B65C559C-1EE7-4889-869F-3C7B1B989B41</PackageIdentityName>
     <PackageIdentityPublisher>CN=Mary</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Mary\source\repos\Penbook\Penbook\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\GitHub\PenbookApp\Penbook\Penbook\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\Mary\source\repos\Penbook\Penbook\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>209F4C72CB146B3CEF246CC1325A64049FA86DEF964ABB246641C40CFD4F167C</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>B65C559C-1EE7-4889-869F-3C7B1B989B41_1.0.0.0_x86__f3gmzvfsaj794</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>B65C559C-1EE7-4889-869F-3C7B1B989B41_f3gmzvfsaj794!App</RegisteredUserModeAppID>
@@ -27,16 +27,16 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Mary\source\repos\Penbook\Penbook\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-11T10:37:49.881</Modified>
+      <Modified>2021-01-11T13:59:14.320</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Mary\source\repos\Penbook\Penbook\bin\x86\Debug\Penbook.exe">
+    <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Penbook.exe">
       <PackagePath>entrypoint\Penbook.exe</PackagePath>
-      <Modified>2021-01-11T10:37:06.259</Modified>
+      <Modified>2021-01-11T13:54:45.257</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Mary\.nuget\packages\microsoft.xaml.behaviors.uwp.managed\2.0.1\lib\uap10.0\Microsoft.Xaml.Interactions.dll">
       <PackagePath>Microsoft.Xaml.Interactions.dll</PackagePath>
@@ -54,7 +54,7 @@
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
       <Modified>2020-04-02T16:44:36.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Mary\source\repos\Penbook\Penbook.Core\bin\Debug\netstandard2.0\Penbook.Core.dll">
+    <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook.Core\bin\Debug\netstandard2.0\Penbook.Core.dll">
       <PackagePath>Penbook.Core.dll</PackagePath>
       <Modified>2020-12-28T13:36:19.298</Modified>
     </AppxPackagedFile>
@@ -66,91 +66,91 @@
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2019-12-06T18:24:14.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Mary\source\repos\Penbook\Penbook\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2020-12-28T13:32:13.712</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Mary\source\repos\Penbook\Penbook\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2020-12-28T13:32:13.596</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Mary\source\repos\Penbook\Penbook\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2020-12-28T13:32:13.607</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Mary\source\repos\Penbook\Penbook\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2020-12-28T13:32:13.613</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Mary\source\repos\Penbook\Penbook\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2020-12-28T13:32:13.642</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Mary\source\repos\Penbook\Penbook\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2020-12-28T13:32:13.660</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Mary\source\repos\Penbook\Penbook\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2020-12-28T13:32:13.668</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Mary\source\repos\Penbook\Penbook\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2020-12-28T13:32:13.676</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Mary\source\repos\Penbook\Penbook\bin\x86\Debug\Penbook.xr.xml">
+    <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Penbook.xr.xml">
       <PackagePath>Penbook.xr.xml</PackagePath>
       <Modified>2021-01-11T10:37:01.681</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Mary\source\repos\Penbook\Penbook\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-01-11T10:37:02.956</Modified>
+      <Modified>2021-01-11T13:59:12.186</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Mary\source\repos\Penbook\Penbook\bin\x86\Debug\Styles\CommandBar.xbf">
+    <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Styles\CommandBar.xbf">
       <PackagePath>Styles\CommandBar.xbf</PackagePath>
-      <Modified>2021-01-11T10:37:02.955</Modified>
+      <Modified>2021-01-11T13:59:12.184</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Mary\source\repos\Penbook\Penbook\bin\x86\Debug\Styles\Page.xbf">
+    <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Styles\Page.xbf">
       <PackagePath>Styles\Page.xbf</PackagePath>
-      <Modified>2021-01-11T10:37:02.955</Modified>
+      <Modified>2021-01-11T13:59:12.185</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Mary\source\repos\Penbook\Penbook\bin\x86\Debug\Styles\_Colors.xbf">
+    <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Styles\_Colors.xbf">
       <PackagePath>Styles\_Colors.xbf</PackagePath>
-      <Modified>2021-01-11T10:37:02.955</Modified>
+      <Modified>2021-01-11T13:59:12.185</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Mary\source\repos\Penbook\Penbook\bin\x86\Debug\Styles\_FontSizes.xbf">
+    <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Styles\_FontSizes.xbf">
       <PackagePath>Styles\_FontSizes.xbf</PackagePath>
-      <Modified>2021-01-11T10:37:02.955</Modified>
+      <Modified>2021-01-11T13:59:12.185</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Mary\source\repos\Penbook\Penbook\bin\x86\Debug\Styles\_Thickness.xbf">
+    <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Styles\_Thickness.xbf">
       <PackagePath>Styles\_Thickness.xbf</PackagePath>
-      <Modified>2021-01-11T10:37:02.955</Modified>
+      <Modified>2021-01-11T13:59:12.185</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Mary\source\repos\Penbook\Penbook\bin\x86\Debug\Styles\TextBlock.xbf">
+    <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Styles\TextBlock.xbf">
       <PackagePath>Styles\TextBlock.xbf</PackagePath>
-      <Modified>2021-01-11T10:37:02.956</Modified>
+      <Modified>2021-01-11T13:59:12.185</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Mary\source\repos\Penbook\Penbook\bin\x86\Debug\Views\InkDrawPage.xbf">
+    <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Views\InkDrawPage.xbf">
       <PackagePath>Views\InkDrawPage.xbf</PackagePath>
-      <Modified>2021-01-11T10:37:02.954</Modified>
+      <Modified>2021-01-11T13:59:12.184</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2019-12-06T16:33:46.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Mary\source\repos\Penbook\Penbook\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-01-11T10:37:27.083</Modified>
+      <Modified>2021-01-11T13:59:13.176</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Mary\source\repos\Penbook\Penbook\bin\x86\Debug\Core\Penbook.exe">
+    <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Core\Penbook.exe">
       <PackagePath>Penbook.exe</PackagePath>
-      <Modified>2021-01-11T10:37:49.111</Modified>
+      <Modified>2021-01-11T13:59:14.291</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

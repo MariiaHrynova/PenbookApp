@@ -185,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mary\\source\\repos\\Penbook\\Penbook.Core\\Penbook.Core.csproj",
+      "projectUniqueName": "C:\\GitHub\\PenbookApp\\Penbook\\Penbook.Core\\Penbook.Core.csproj",
       "projectName": "Penbook.Core",
-      "projectPath": "C:\\Users\\Mary\\source\\repos\\Penbook\\Penbook.Core\\Penbook.Core.csproj",
+      "projectPath": "C:\\GitHub\\PenbookApp\\Penbook\\Penbook.Core\\Penbook.Core.csproj",
       "packagesPath": "C:\\Users\\Mary\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mary\\source\\repos\\Penbook\\Penbook.Core\\obj\\",
+      "outputPath": "C:\\GitHub\\PenbookApp\\Penbook\\Penbook.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
