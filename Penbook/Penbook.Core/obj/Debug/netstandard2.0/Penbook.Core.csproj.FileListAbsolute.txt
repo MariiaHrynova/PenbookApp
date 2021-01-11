@@ -1,0 +1,9 @@
+C:\Users\Mary\source\repos\Penbook\Penbook.Core\bin\Debug\netstandard2.0\Penbook.Core.deps.json
+C:\Users\Mary\source\repos\Penbook\Penbook.Core\bin\Debug\netstandard2.0\Penbook.Core.dll
+C:\Users\Mary\source\repos\Penbook\Penbook.Core\bin\Debug\netstandard2.0\Penbook.Core.pdb
+C:\Users\Mary\source\repos\Penbook\Penbook.Core\obj\Debug\netstandard2.0\Penbook.Core.csprojAssemblyReference.cache
+C:\Users\Mary\source\repos\Penbook\Penbook.Core\obj\Debug\netstandard2.0\Penbook.Core.AssemblyInfoInputs.cache
+C:\Users\Mary\source\repos\Penbook\Penbook.Core\obj\Debug\netstandard2.0\Penbook.Core.AssemblyInfo.cs
+C:\Users\Mary\source\repos\Penbook\Penbook.Core\obj\Debug\netstandard2.0\Penbook.Core.csproj.CoreCompileInputs.cache
+C:\Users\Mary\source\repos\Penbook\Penbook.Core\obj\Debug\netstandard2.0\Penbook.Core.dll
+C:\Users\Mary\source\repos\Penbook\Penbook.Core\obj\Debug\netstandard2.0\Penbook.Core.pdb
