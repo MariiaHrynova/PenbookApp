@@ -119,6 +119,9 @@
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.10</Version>
     </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit.Uwp">
+      <Version>6.1.1</Version>
+    </PackageReference>
     <PackageReference Include="Microsoft.Xaml.Behaviors.Uwp.Managed">
       <Version>2.0.1</Version>
     </PackageReference>
@@ -148,7 +151,7 @@
     <Compile Include="Services\Ink\InkUndoRedoService.cs" />
     <Compile Include="Services\Ink\InkZoomService.cs" />
     <Compile Include="Services\Ink\UndoRedo\AddStrokeUndoRedoOperation.cs" />
-    <Compile Include="Services\Ink\InkPrintService.cs" />
+    <Compile Include="Services\Ink\InkPrintService.Print.cs" />
     <Compile Include="Services\Ink\UndoRedo\IUndoRedoOperation.cs" />
     <Compile Include="Services\Ink\UndoRedo\MoveStrokesUndoRedoOperation.cs" />
     <Compile Include="Services\Ink\UndoRedo\RemoveStrokeUndoRedoOperation.cs" />

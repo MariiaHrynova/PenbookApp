@@ -43,6 +43,7 @@
     <Pkgruntime_win10-arm_Microsoft_Net_UWPCoreRuntimeSdk Condition=" '$(Pkgruntime_win10-arm_Microsoft_Net_UWPCoreRuntimeSdk)' == '' ">C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.10</Pkgruntime_win10-arm_Microsoft_Net_UWPCoreRuntimeSdk>
     <Pkgruntime_win10-arm_Microsoft_Net_Native_SharedLibrary Condition=" '$(Pkgruntime_win10-arm_Microsoft_Net_Native_SharedLibrary)' == '' ">C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.native.sharedlibrary\2.2.7-rel-28605-00</Pkgruntime_win10-arm_Microsoft_Net_Native_SharedLibrary>
     <Pkgruntime_win10-arm_Microsoft_Net_Native_Compiler Condition=" '$(Pkgruntime_win10-arm_Microsoft_Net_Native_Compiler)' == '' ">C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.native.compiler\2.2.8-rel-28605-00</Pkgruntime_win10-arm_Microsoft_Net_Native_Compiler>
+    <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">C:\Users\Mary\.nuget\packages\newtonsoft.json\10.0.3</PkgNewtonsoft_Json>
     <PkgMicrosoft_Net_UWPCoreRuntimeSdk Condition=" '$(PkgMicrosoft_Net_UWPCoreRuntimeSdk)' == '' ">C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\microsoft.net.uwpcoreruntimesdk\2.2.10</PkgMicrosoft_Net_UWPCoreRuntimeSdk>
     <PkgMicrosoft_Net_Native_Compiler Condition=" '$(PkgMicrosoft_Net_Native_Compiler)' == '' ">C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\microsoft.net.native.compiler\2.2.8-rel-28605-00</PkgMicrosoft_Net_Native_Compiler>
   </PropertyGroup>

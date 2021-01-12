@@ -17,7 +17,7 @@ namespace Penbook.ViewModels
         private InkUndoRedoService _undoRedoService;
         private InkFileService _fileService;
         private InkZoomService _zoomService;
-        private InkPrintService _printService;
+        //private InkPrintService _printService;
 
         private ICommand cutCommand;
         private ICommand copyCommand;
@@ -42,13 +42,14 @@ namespace Penbook.ViewModels
 
         public void Initialize(
             InkStrokesService strokeService,
-            InkLassoSelectionService lassoSelectionService,
+            InkLassoSelectionService lassoSelectionService,   
             InkPointerDeviceService pointerDeviceService,
             InkCopyPasteService copyPasteService,
             InkUndoRedoService undoRedoService,
             InkFileService fileService,
-            InkZoomService zoomService,
-            InkPrintService printService)
+            InkZoomService zoomService
+            //InkPrintService printService
+            )
         {
             _strokeService = strokeService;
             _lassoSelectionService = lassoSelectionService;
@@ -57,7 +58,7 @@ namespace Penbook.ViewModels
             _undoRedoService = undoRedoService;
             _fileService = fileService;
             _zoomService = zoomService;
-            _printService = printService;
+            //_printService = printService;
 
             _strokeService.CopyStrokesEvent += (s, e) => RefreshCommands();
             _strokeService.SelectStrokesEvent += (s, e) => RefreshCommands();
@@ -129,7 +130,7 @@ namespace Penbook.ViewModels
            ?? (exportAsImageCommand = new RelayCommand(async () => await ExportAsImageAsync(), CanExportAsImage));
 
         public ICommand PrintCommand => printCommand
-           ?? (exportAsImageCommand = new RelayCommand(async () => await PrintAsync(), CanPrint));
+           ?? (printCommand = new RelayCommand(async () => await PrintAsync(), CanPrint));
 
         public ICommand ClearAllCommand => clearAllCommand
            ?? (clearAllCommand = new RelayCommand(ClearAll, CanClearAll));
@@ -189,7 +190,7 @@ namespace Penbook.ViewModels
         private async Task PrintAsync()
         {
             ClearSelection();
-            await _printService?.PrintAsync();
+            await _fileService?.PrintAsync();
         }
 
         private void ClearAll()
@@ -216,7 +217,7 @@ namespace Penbook.ViewModels
 
         private bool CanClearAll() => _strokeService != null && _strokeService.GetStrokes().Any();
 
-        private bool CanPrint() => _printService != null && _printService.CanPrint;
+        private bool CanPrint() => _fileService != null && _fileService.CanPrint;
 
         private void RefreshCommands()
         {

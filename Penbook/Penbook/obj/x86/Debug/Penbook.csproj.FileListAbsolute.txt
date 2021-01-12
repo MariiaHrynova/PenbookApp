@@ -146,3 +146,10 @@ C:\GitHub\PenbookApp\Penbook\Penbook\obj\x86\Debug\MultipleQualifiersPerDimensio
 C:\GitHub\PenbookApp\Penbook\Penbook\obj\x86\Debug\ProjectArchitectures.txt
 C:\GitHub\PenbookApp\Penbook\Penbook\obj\x86\Debug\.winmd_cache\$Microsoft.Graphics.Canvas.winmd_637214426760000000.json
 C:\GitHub\PenbookApp\Penbook\Penbook\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637112534540000000.json
+C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Microsoft.Toolkit.dll
+C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Microsoft.Toolkit.pdb
+C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Microsoft.Toolkit.Uwp.dll
+C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Microsoft.Toolkit.Uwp.pdb
+C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Newtonsoft.Json.dll
+C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\GitHub\PenbookApp\Penbook\Penbook\obj\x86\Debug\Microsoft.Toolkit.Uwp.pri.xml
