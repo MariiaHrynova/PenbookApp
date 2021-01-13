@@ -13,7 +13,7 @@ using Windows.UI.Xaml.Controls;
 
 namespace Penbook.Services.Ink
 {
-    public partial class InkFileService
+    public class InkFileService
     {
         private readonly InkCanvas _inkCanvas;
         private readonly InkStrokesService _strokesService;

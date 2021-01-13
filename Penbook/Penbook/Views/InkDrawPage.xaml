@@ -79,7 +79,7 @@
             ScrollViewer.HorizontalScrollBarVisibility="Auto"
             Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}"
             ZoomMode="Enabled">
-                <Grid Background="{StaticResource InkCanvasBackground}"
+                <Grid x:Name="container" Background="{StaticResource InkCanvasBackground}"
                         Width="{Binding ElementName=inkCanvas, Path=Width}"
                         Height="{Binding ElementName=inkCanvas, Path=Height}">                        
                     <InkCanvas x:Name="inkCanvas"

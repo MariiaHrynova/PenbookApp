@@ -32,7 +32,7 @@ namespace Penbook.Views
                     new InkUndoRedoService(inkCanvas, strokeService),
                     new InkFileService(inkCanvas, strokeService),
                     new InkZoomService(canvasScroll),
-                    new InkPrintService());
+                    new InkPrintService(inkCanvas, container));
             };
         }
 

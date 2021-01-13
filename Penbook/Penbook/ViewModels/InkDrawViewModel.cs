@@ -17,7 +17,7 @@ namespace Penbook.ViewModels
         private InkUndoRedoService _undoRedoService;
         private InkFileService _fileService;
         private InkZoomService _zoomService;
-        //private InkPrintService _printService;
+        private InkPrintService _printService;
 
         private ICommand cutCommand;
         private ICommand copyCommand;
@@ -47,8 +47,8 @@ namespace Penbook.ViewModels
             InkCopyPasteService copyPasteService,
             InkUndoRedoService undoRedoService,
             InkFileService fileService,
-            InkZoomService zoomService
-            //InkPrintService printService
+            InkZoomService zoomService,
+            InkPrintService printService
             )
         {
             _strokeService = strokeService;
@@ -58,7 +58,7 @@ namespace Penbook.ViewModels
             _undoRedoService = undoRedoService;
             _fileService = fileService;
             _zoomService = zoomService;
-            //_printService = printService;
+            _printService = printService;
 
             _strokeService.CopyStrokesEvent += (s, e) => RefreshCommands();
             _strokeService.SelectStrokesEvent += (s, e) => RefreshCommands();
@@ -190,7 +190,7 @@ namespace Penbook.ViewModels
         private async Task PrintAsync()
         {
             ClearSelection();
-            await _fileService?.PrintAsync();
+            await _printService?.PrintAsync();
         }
 
         private void ClearAll()
@@ -217,7 +217,7 @@ namespace Penbook.ViewModels
 
         private bool CanClearAll() => _strokeService != null && _strokeService.GetStrokes().Any();
 
-        private bool CanPrint() => _fileService != null && _fileService.CanPrint;
+        private bool CanPrint() => _printService != null && _printService.CanPrint;
 
         private void RefreshCommands()
         {

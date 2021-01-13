@@ -151,7 +151,7 @@
     <Compile Include="Services\Ink\InkUndoRedoService.cs" />
     <Compile Include="Services\Ink\InkZoomService.cs" />
     <Compile Include="Services\Ink\UndoRedo\AddStrokeUndoRedoOperation.cs" />
-    <Compile Include="Services\Ink\InkPrintService.Print.cs" />
+    <Compile Include="Services\Ink\InkPrintService.cs" />
     <Compile Include="Services\Ink\UndoRedo\IUndoRedoOperation.cs" />
     <Compile Include="Services\Ink\UndoRedo\MoveStrokesUndoRedoOperation.cs" />
     <Compile Include="Services\Ink\UndoRedo\RemoveStrokeUndoRedoOperation.cs" />
