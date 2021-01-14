@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-14T17:33:29.682</Modified>
+      <Modified>2021-01-14T18:11:39.969</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Penbook.exe">
       <PackagePath>entrypoint\Penbook.exe</PackagePath>
-      <Modified>2021-01-14T17:28:47.686</Modified>
+      <Modified>2021-01-14T18:11:27.538</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Mary\.nuget\packages\microsoft.toolkit\6.1.1\lib\netstandard2.0\Microsoft.Toolkit.dll">
       <PackagePath>Microsoft.Toolkit.dll</PackagePath>
@@ -126,35 +126,35 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-01-14T17:33:25.525</Modified>
+      <Modified>2021-01-14T18:11:26.850</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Styles\CommandBar.xbf">
       <PackagePath>Styles\CommandBar.xbf</PackagePath>
-      <Modified>2021-01-14T17:33:25.523</Modified>
+      <Modified>2021-01-14T18:11:26.846</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Styles\Page.xbf">
       <PackagePath>Styles\Page.xbf</PackagePath>
-      <Modified>2021-01-14T17:33:25.523</Modified>
+      <Modified>2021-01-14T18:11:26.847</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Styles\_Colors.xbf">
       <PackagePath>Styles\_Colors.xbf</PackagePath>
-      <Modified>2021-01-14T17:33:25.523</Modified>
+      <Modified>2021-01-14T18:11:26.847</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Styles\_FontSizes.xbf">
       <PackagePath>Styles\_FontSizes.xbf</PackagePath>
-      <Modified>2021-01-14T17:33:25.524</Modified>
+      <Modified>2021-01-14T18:11:26.848</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Styles\_Thickness.xbf">
       <PackagePath>Styles\_Thickness.xbf</PackagePath>
-      <Modified>2021-01-14T17:33:25.524</Modified>
+      <Modified>2021-01-14T18:11:26.849</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Styles\TextBlock.xbf">
       <PackagePath>Styles\TextBlock.xbf</PackagePath>
-      <Modified>2021-01-14T17:33:25.525</Modified>
+      <Modified>2021-01-14T18:11:26.850</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Views\InkDrawPage.xbf">
       <PackagePath>Views\InkDrawPage.xbf</PackagePath>
-      <Modified>2021-01-14T17:33:25.521</Modified>
+      <Modified>2021-01-14T18:11:26.845</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -166,7 +166,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Core\Penbook.exe">
       <PackagePath>Penbook.exe</PackagePath>
-      <Modified>2021-01-14T17:33:29.657</Modified>
+      <Modified>2021-01-14T18:11:39.918</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

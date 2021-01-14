@@ -50,17 +50,18 @@ namespace Penbook.Services.Ink
 
             openPicker.FileTypeFilter.Add(".png");
             openPicker.FileTypeFilter.Add(".jpg");
-           // openPicker.FileTypeFilter.Add(".pdf");
 
             var file = await openPicker.PickSingleFileAsync();
 
             if (file == null) return false;
 
-            Windows.Storage.Streams.IRandomAccessStream stream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
-            using (var inputStream = stream.GetInputStreamAt(0))
-            {
-                await _inkCanvas.InkPresenter.StrokeContainer.LoadAsync(stream);
-            }
+            IRandomAccessStream stream = await file.OpenAsync(FileAccessMode.Read);
+
+            var image = new BitmapImage();
+                
+            await image.SetSourceAsync(stream);
+            _image.Source = image;
+
             stream.Dispose();
 
             return true;
