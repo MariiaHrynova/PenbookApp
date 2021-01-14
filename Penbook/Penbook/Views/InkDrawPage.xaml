@@ -64,6 +64,7 @@
                     <AppBarButton x:Uid="InkDraw_RedoButton" Icon="Redo" Command="{x:Bind ViewModel.RedoCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
                     <AppBarSeparator/>
                     <AppBarButton x:Uid="InkDraw_LoadPngFileButton" Icon="OpenFile" Command="{x:Bind ViewModel.LoadImageFileCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
+                    <AppBarButton x:Uid="InkDraw_LoadPdfFileButton" Icon="OpenFile" Command="{x:Bind ViewModel.LoadPdfFileCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
                     <AppBarButton x:Uid="InkDraw_LoadInkFileButton" Icon="OpenFile" Command="{x:Bind ViewModel.LoadInkFileCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
                     <AppBarButton x:Uid="InkDraw_SaveInkFileButton" Icon="Save" Command="{x:Bind ViewModel.SaveInkFileCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
                     <AppBarButton x:Uid="InkDraw_ExportAsImageButton" Icon="Download" Command="{x:Bind ViewModel.ExportAsImageCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
@@ -109,6 +110,7 @@
                 <AppBarButton x:Uid="InkDraw_RedoButton" Icon="Redo" Command="{x:Bind ViewModel.RedoCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
                 <AppBarSeparator/>
                 <AppBarButton x:Uid="InkDraw_LoadPngFileButton" Icon="OpenFile" Command="{x:Bind ViewModel.LoadImageFileCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
+                <AppBarButton x:Uid="InkDraw_LoadPdfFileButton" Icon="OpenFile" Command="{x:Bind ViewModel.LoadPdfFileCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
                 <AppBarButton x:Uid="InkDraw_LoadInkFileButton" Icon="OpenFile" Command="{x:Bind ViewModel.LoadInkFileCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
                 <AppBarButton x:Uid="InkDraw_SaveInkFileButton" Icon="Save" Command="{x:Bind ViewModel.SaveInkFileCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
                 <AppBarButton x:Uid="InkDraw_ExportAsImageButton" Icon="Download" Command="{x:Bind ViewModel.ExportAsImageCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />

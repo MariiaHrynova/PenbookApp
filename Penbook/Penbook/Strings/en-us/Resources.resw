@@ -254,16 +254,28 @@
     <comment>LoadInkFile button automation name property for InkDraw</comment>
   </data>
   <data name="InkDraw_LoadPngFileButton.Label" xml:space="preserve">
-    <value>Load png image</value>
+    <value>Load image</value>
     <comment>LoadPngFile button label property for InkDraw</comment>
   </data>
     <data name="InkDraw_LoadPngFileButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>Load png image</value>
+    <value>Load image</value>
     <comment>LoadPngFile button tooltip property for InkDraw</comment>
   </data>
   <data name="InkDraw_LoadPngFileButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
-    <value>Load png image</value>
+    <value>Load image</value>
     <comment>LoadPngFile button automation name property for InkDraw</comment>
+  </data>
+  <data name="InkDraw_LoadPdfFileButton.Label" xml:space="preserve">
+    <value>Load pdf file</value>
+    <comment>LoadPdfFile button label property for InkDraw</comment>
+  </data>
+  <data name="InkDraw_LoadPdfFileButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
+    <value>Load pdf file</value>
+    <comment>LoadPngFile button tooltip property for InkDraw</comment>
+  </data>
+  <data name="InkDraw_LoadPdfFileButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Load pdf file</value>
+    <comment>LoadPdfFile button automation name property for InkDraw</comment>
   </data>
   <data name="InkDraw_SaveInkFileButton.Label" xml:space="preserve">
     <value>Save ink file</value>

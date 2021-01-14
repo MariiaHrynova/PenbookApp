@@ -4,11 +4,12 @@ using System.Linq;
 using System.Threading.Tasks;
 
 using Microsoft.Graphics.Canvas;
-
+using Windows.Data.Pdf;
 using Windows.Foundation;
 using Windows.Storage;
 using Windows.Storage.Pickers;
 using Windows.Storage.Provider;
+using Windows.Storage.Streams;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media.Imaging;
 
@@ -61,6 +62,35 @@ namespace Penbook.Services.Ink
                 await _inkCanvas.InkPresenter.StrokeContainer.LoadAsync(stream);
             }
             stream.Dispose();
+
+            return true;
+        }
+
+        public async Task<bool> LoadPdfAsync()
+        {
+            var openPicker = new FileOpenPicker
+            {
+                SuggestedStartLocation = PickerLocationId.PicturesLibrary
+            };
+
+            openPicker.FileTypeFilter.Add(".pdf");
+
+            var file = await openPicker.PickSingleFileAsync();
+
+            if (file == null) return false;
+
+            var pdfDocument = await PdfDocument.LoadFromFileAsync(file);
+
+            var page = pdfDocument.GetPage(0);
+
+            var image = new BitmapImage();
+
+            using (var stream = new InMemoryRandomAccessStream())
+            {
+                await page.RenderToStreamAsync(stream);
+                await image.SetSourceAsync(stream);
+                _image.Source = image;
+            }
 
             return true;
         }

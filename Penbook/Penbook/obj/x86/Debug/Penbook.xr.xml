@@ -113,6 +113,7 @@
       <RootProperty Name="ElementName" />
       <RootProperty Name="Path" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Image" />
     <RootType FullName="Windows.UI.Xaml.Controls.InkCanvas">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
