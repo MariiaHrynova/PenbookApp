@@ -217,7 +217,6 @@ namespace Penbook.Services.Ink
             LoadInkFileEvent?.Invoke(this, EventArgs.Empty);
             return true;
         }
-
         public async Task<FileUpdateStatus> SaveInkFileAsync(StorageFile file)
         {
             if (file != null)

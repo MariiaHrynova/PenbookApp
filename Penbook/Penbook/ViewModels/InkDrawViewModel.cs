@@ -26,6 +26,7 @@ namespace Penbook.ViewModels
         private ICommand redoCommand;
         private ICommand zoomInCommand;
         private ICommand zoomOutCommand;
+        private ICommand loadImageFileCommand;
         private ICommand loadInkFileCommand;
         private ICommand saveInkFileCommand;
         private ICommand exportAsImageCommand;
@@ -118,7 +119,9 @@ namespace Penbook.ViewModels
             ?? (zoomInCommand = new RelayCommand(() => _zoomService?.ZoomIn()));
 
         public ICommand ZoomOutCommand => zoomOutCommand
-            ?? (zoomOutCommand = new RelayCommand(() => _zoomService?.ZoomOut()));
+            ?? (zoomOutCommand = new RelayCommand(() => _zoomService?.ZoomOut()));  
+        public ICommand LoadImageFileCommand => loadImageFileCommand
+          ?? (loadImageFileCommand = new RelayCommand(async () => await LoadImageFileAsync()));
 
         public ICommand LoadInkFileCommand => loadInkFileCommand
            ?? (loadInkFileCommand = new RelayCommand(async () => await LoadInkFileAsync()));
@@ -162,6 +165,17 @@ namespace Penbook.ViewModels
         {
             ClearSelection();
             _undoRedoService?.Redo();
+        }
+
+        private async Task LoadImageFileAsync()
+        {
+            ClearSelection();
+            var fileLoaded = await _fileService?.LoadImageAsync();
+
+            if (fileLoaded)
+            {
+                _undoRedoService?.Reset();
+            }
         }
 
         private async Task LoadInkFileAsync()

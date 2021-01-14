@@ -253,6 +253,18 @@
     <value>Load ink file</value>
     <comment>LoadInkFile button automation name property for InkDraw</comment>
   </data>
+  <data name="InkDraw_LoadPngFileButton.Label" xml:space="preserve">
+    <value>Load png image</value>
+    <comment>LoadPngFile button label property for InkDraw</comment>
+  </data>
+    <data name="InkDraw_LoadPngFileButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
+    <value>Load png image</value>
+    <comment>LoadPngFile button tooltip property for InkDraw</comment>
+  </data>
+  <data name="InkDraw_LoadPngFileButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Load png image</value>
+    <comment>LoadPngFile button automation name property for InkDraw</comment>
+  </data>
   <data name="InkDraw_SaveInkFileButton.Label" xml:space="preserve">
     <value>Save ink file</value>
     <comment>SaveInkFile button label property for InkDraw</comment>

@@ -63,6 +63,7 @@
                     <AppBarButton x:Uid="InkDraw_UndoButton" Icon="Undo" Command="{x:Bind ViewModel.UndoCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
                     <AppBarButton x:Uid="InkDraw_RedoButton" Icon="Redo" Command="{x:Bind ViewModel.RedoCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
                     <AppBarSeparator/>
+                    <AppBarButton x:Uid="InkDraw_LoadPngFileButton" Icon="OpenFile" Command="{x:Bind ViewModel.LoadImageFileCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
                     <AppBarButton x:Uid="InkDraw_LoadInkFileButton" Icon="OpenFile" Command="{x:Bind ViewModel.LoadInkFileCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
                     <AppBarButton x:Uid="InkDraw_SaveInkFileButton" Icon="Save" Command="{x:Bind ViewModel.SaveInkFileCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
                     <AppBarButton x:Uid="InkDraw_ExportAsImageButton" Icon="Download" Command="{x:Bind ViewModel.ExportAsImageCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
@@ -81,8 +82,9 @@
             ZoomMode="Enabled">
                 <Grid x:Name="container" Background="{StaticResource InkCanvasBackground}"
                         Width="{Binding ElementName=inkCanvas, Path=Width}"
-                        Height="{Binding ElementName=inkCanvas, Path=Height}">                        
-                    <InkCanvas x:Name="inkCanvas"
+                        Height="{Binding ElementName=inkCanvas, Path=Height}">
+                <Image x:Name = "imageContainer" />
+                <InkCanvas x:Name="inkCanvas"
                             HorizontalAlignment="Stretch"
                             VerticalAlignment="Stretch" />
                 <Canvas x:Name="selectionCanvas"
@@ -106,6 +108,7 @@
                 <AppBarButton x:Uid="InkDraw_UndoButton" Icon="Undo" Command="{x:Bind ViewModel.UndoCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
                 <AppBarButton x:Uid="InkDraw_RedoButton" Icon="Redo" Command="{x:Bind ViewModel.RedoCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
                 <AppBarSeparator/>
+                <AppBarButton x:Uid="InkDraw_LoadPngFileButton" Icon="OpenFile" Command="{x:Bind ViewModel.LoadImageFileCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
                 <AppBarButton x:Uid="InkDraw_LoadInkFileButton" Icon="OpenFile" Command="{x:Bind ViewModel.LoadInkFileCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
                 <AppBarButton x:Uid="InkDraw_SaveInkFileButton" Icon="Save" Command="{x:Bind ViewModel.SaveInkFileCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
                 <AppBarButton x:Uid="InkDraw_ExportAsImageButton" Icon="Download" Command="{x:Bind ViewModel.ExportAsImageCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />

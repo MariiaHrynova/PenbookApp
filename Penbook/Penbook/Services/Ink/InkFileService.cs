@@ -10,6 +10,7 @@ using Windows.Storage;
 using Windows.Storage.Pickers;
 using Windows.Storage.Provider;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Media.Imaging;
 
 namespace Penbook.Services.Ink
 {
@@ -17,11 +18,13 @@ namespace Penbook.Services.Ink
     {
         private readonly InkCanvas _inkCanvas;
         private readonly InkStrokesService _strokesService;
+        private readonly Image _image;
 
-        public InkFileService(InkCanvas inkCanvas, InkStrokesService strokesService)
+        public InkFileService(InkCanvas inkCanvas, InkStrokesService strokesService, Image image)
         {
             _inkCanvas = inkCanvas;
             _strokesService = strokesService;
+            _image = image;
         }
 
         public async Task<bool> LoadInkAsync()
@@ -35,6 +38,31 @@ namespace Penbook.Services.Ink
 
             var file = await openPicker.PickSingleFileAsync();
             return await _strokesService.LoadInkFileAsync(file);
+        }
+
+        public async Task<bool> LoadImageAsync()
+        {
+            var openPicker = new FileOpenPicker
+            {
+                SuggestedStartLocation = PickerLocationId.PicturesLibrary
+            };
+
+            openPicker.FileTypeFilter.Add(".png");
+            openPicker.FileTypeFilter.Add(".jpg");
+           // openPicker.FileTypeFilter.Add(".pdf");
+
+            var file = await openPicker.PickSingleFileAsync();
+
+            if (file == null) return false;
+
+            Windows.Storage.Streams.IRandomAccessStream stream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
+            using (var inputStream = stream.GetInputStreamAt(0))
+            {
+                await _inkCanvas.InkPresenter.StrokeContainer.LoadAsync(stream);
+            }
+            stream.Dispose();
+
+            return true;
         }
 
         public async Task SaveInkAsync()
