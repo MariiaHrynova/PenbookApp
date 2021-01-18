@@ -1,9 +1,6 @@
 ﻿using System;
-
 using Penbook.Services.Ink;
 using Penbook.ViewModels;
-
-using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
 namespace Penbook.Views
@@ -30,9 +27,10 @@ namespace Penbook.Views
                     new InkPointerDeviceService(inkCanvas),
                     new InkCopyPasteService(strokeService),
                     new InkUndoRedoService(inkCanvas, strokeService),
-                    new InkFileService(inkCanvas, strokeService, imageContainer),
+                    new InkFileService(container, inkCanvas, imageContainer, strokeService),
                     new InkZoomService(canvasScroll),
-                    new InkPrintService(inkCanvas, container));
+                    new InkPrintService(inkCanvas, container),
+                    new InkCloudService());
             };
         }
 

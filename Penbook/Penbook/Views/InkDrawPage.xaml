@@ -70,6 +70,8 @@
                     <AppBarButton x:Uid="InkDraw_ExportAsImageButton" Icon="Download" Command="{x:Bind ViewModel.ExportAsImageCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
                     <AppBarButton x:Uid="InkDraw_PrintButton" Icon="Print" Command="{x:Bind ViewModel.PrintCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
                     <AppBarSeparator/>
+                    <AppBarButton x:Uid="InkDraw_UploadFileOnCloudButton" Icon="ProtectedDocument" Command="{x:Bind ViewModel.SaveOnCloudStorageCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
+                    <AppBarSeparator/>
                     <AppBarButton x:Uid="InkDraw_ClearAllButton" Icon="Delete" Command="{x:Bind ViewModel.ClearAllCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
                 </CommandBar.SecondaryCommands>
             </CommandBar>
@@ -115,6 +117,8 @@
                 <AppBarButton x:Uid="InkDraw_SaveInkFileButton" Icon="Save" Command="{x:Bind ViewModel.SaveInkFileCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
                 <AppBarButton x:Uid="InkDraw_ExportAsImageButton" Icon="Download" Command="{x:Bind ViewModel.ExportAsImageCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
                 <AppBarButton x:Uid="InkDraw_PrintButton" Icon="Print" Command="{x:Bind ViewModel.PrintCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
+                <AppBarSeparator/>
+                <AppBarButton x:Uid="InkDraw_UploadFileOnCloudButton" Icon="ProtectedDocument" Command="{x:Bind ViewModel.SaveOnCloudStorageCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
                 <AppBarSeparator/>
                 <AppBarButton x:Uid="InkDraw_ClearAllButton" Icon="Delete" Command="{x:Bind ViewModel.ClearAllCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
             </CommandBar.SecondaryCommands>

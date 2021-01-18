@@ -18,6 +18,7 @@ namespace Penbook.ViewModels
         private InkFileService _fileService;
         private InkZoomService _zoomService;
         private InkPrintService _printService;
+        private InkCloudService _cloudService;
 
         private ICommand cutCommand;
         private ICommand copyCommand;
@@ -33,6 +34,7 @@ namespace Penbook.ViewModels
         private ICommand exportAsImageCommand;
         private ICommand clearAllCommand;
         private ICommand printCommand;
+        private ICommand saveOnCloudStorageCommand;
 
         private bool enableTouch = true;
         private bool enableMouse = true;
@@ -50,7 +52,8 @@ namespace Penbook.ViewModels
             InkUndoRedoService undoRedoService,
             InkFileService fileService,
             InkZoomService zoomService,
-            InkPrintService printService
+            InkPrintService printService,
+            InkCloudService cloudService
             )
         {
             _strokeService = strokeService;
@@ -61,6 +64,7 @@ namespace Penbook.ViewModels
             _fileService = fileService;
             _zoomService = zoomService;
             _printService = printService;
+            _cloudService = cloudService;
 
             _strokeService.CopyStrokesEvent += (s, e) => RefreshCommands();
             _strokeService.SelectStrokesEvent += (s, e) => RefreshCommands();
@@ -140,6 +144,9 @@ namespace Penbook.ViewModels
 
         public ICommand ClearAllCommand => clearAllCommand
            ?? (clearAllCommand = new RelayCommand(ClearAll, CanClearAll));
+
+        public ICommand SaveOnCloudStorageCommand => saveOnCloudStorageCommand
+            ?? (saveOnCloudStorageCommand = new RelayCommand(async () => await _cloudService.SaveOnCloudStorage(), CanLoadOnCloud));
 
         private void Cut()
         {
@@ -239,13 +246,15 @@ namespace Penbook.ViewModels
 
         private bool CanRedo() => _undoRedoService != null && _undoRedoService.CanRedo;
 
-        private bool CanSaveInkFile() => _strokeService != null && _strokeService.GetStrokes().Any();
+        private bool CanSaveInkFile() => _strokeService != null && _strokeService.GetStrokes().Any() && _fileService.IsImageNotNull();
 
         private bool CanExportAsImage() => _strokeService != null && _strokeService.GetStrokes().Any();
 
         private bool CanClearAll() => _strokeService != null && _strokeService.GetStrokes().Any();
 
         private bool CanPrint() => _printService != null && _printService.CanPrint;
+
+        private bool CanLoadOnCloud() => _cloudService != null && _strokeService.GetStrokes().Any();
 
         private void RefreshCommands()
         {
@@ -258,6 +267,7 @@ namespace Penbook.ViewModels
             (ExportAsImageCommand as RelayCommand)?.OnCanExecuteChanged();
             (ClearAllCommand as RelayCommand)?.OnCanExecuteChanged();
             (PrintCommand as RelayCommand)?.OnCanExecuteChanged();
+            
         }
 
         private void ConfigLassoSelection(bool enableLasso)
