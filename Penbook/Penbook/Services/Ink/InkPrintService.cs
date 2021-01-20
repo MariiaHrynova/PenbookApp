@@ -10,11 +10,12 @@ using Windows.UI.Xaml.Printing;
 using Microsoft.Toolkit.Uwp.Helpers;
 using Windows.Storage.Streams;
 using Windows.UI.Xaml.Media.Imaging;
+using System.Resources;
 
 namespace Penbook.Services.Ink
 {
     public class InkPrintService
-    {
+    { 
         private readonly InkCanvas inkCanvas;
         private Panel container;
 
@@ -50,11 +51,13 @@ namespace Penbook.Services.Ink
 
                     if (e.Completion == PrintTaskCompletion.Failed)
                     {
+                        var resourceLoader = Windows.ApplicationModel.Resources.ResourceLoader.GetForCurrentView();
+
                         ContentDialog noPrintingDialog = new ContentDialog()
-                        {
-                            Title = "ОШИБКА ПЕЧАТИ",
-                            Content = "\nПЕЧАТЬ НЕ УДАЛАСЬ.",
-                            PrimaryButtonText = "OK"
+                        { 
+                            Title = resourceLoader.GetString("noPrintingDialog.Title"),                   
+                            Content = "noPrintingDialog.Content",
+                            PrimaryButtonText = "noPrintingDialog.Ok"
                         };
                         await noPrintingDialog.ShowAsync();
                     }
@@ -97,11 +100,13 @@ namespace Penbook.Services.Ink
             }
             catch
             {
+                var resourceLoader = Windows.ApplicationModel.Resources.ResourceLoader.GetForCurrentView();
+                
                 ContentDialog noPrintingDialog = new ContentDialog()
                 {
-                    Title = "Printing error",
-                    Content = "\nSorry, printing can' t proceed at this time.",
-                    PrimaryButtonText = "OK"
+                    Title = resourceLoader.GetString("noPrintingDialog.Title"),
+                    Content = resourceLoader.GetString("noPrintingDialog.Content"),    
+                    PrimaryButtonText = resourceLoader.GetString("noPrintingDialog.Ok")
                 };
                 await noPrintingDialog.ShowAsync();
             }

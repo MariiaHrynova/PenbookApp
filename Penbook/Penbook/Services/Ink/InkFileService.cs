@@ -151,12 +151,12 @@ namespace Penbook.Services.Ink
 
                 var file = await savePicker.PickSaveFileAsync();
 
+                if (file == null) return;
+
                 using (var fileStream = await file.OpenAsync(FileAccessMode.ReadWrite))
                 {
                     await renderTarget.SaveAsync(fileStream, CanvasBitmapFileFormat.Png, 1f);
                 }
-
-                if (file == null) return;
             }
 
             else

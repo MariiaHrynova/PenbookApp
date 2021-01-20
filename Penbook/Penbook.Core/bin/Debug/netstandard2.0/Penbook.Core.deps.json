@@ -9,6 +9,7 @@
     ".NETStandard,Version=v2.0/": {
       "Penbook.Core/1.0.0": {
         "dependencies": {
+          "Microsoft.Toolkit.Uwp.PlatformSpecificAnalyzer": "6.1.1",
           "NETStandard.Library": "2.0.3"
         },
         "runtime": {
@@ -16,6 +17,7 @@
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
+      "Microsoft.Toolkit.Uwp.PlatformSpecificAnalyzer/6.1.1": {},
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
@@ -35,6 +37,13 @@
       "sha512": "sha512-kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "path": "microsoft.netcore.platforms/1.1.0",
       "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
+    },
+    "Microsoft.Toolkit.Uwp.PlatformSpecificAnalyzer/6.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uOmcLIHkQ9iCGd+u0qXvvvTB0wwosLAK2GCIH9wyCZulOYlYVMvtTe10/fpIvvr8kLpYrov7XRFUaaS3NA9pvA==",
+      "path": "microsoft.toolkit.uwp.platformspecificanalyzer/6.1.1",
+      "hashPath": "microsoft.toolkit.uwp.platformspecificanalyzer.6.1.1.nupkg.sha512"
     },
     "NETStandard.Library/2.0.3": {
       "type": "package",

@@ -11,6 +11,9 @@
           "lib/netstandard1.0/_._": {}
         }
       },
+      "Microsoft.Toolkit.Uwp.PlatformSpecificAnalyzer/6.1.1": {
+        "type": "package"
+      },
       "NETStandard.Library/2.0.3": {
         "type": "package",
         "dependencies": {
@@ -42,6 +45,22 @@
         "microsoft.netcore.platforms.1.1.0.nupkg.sha512",
         "microsoft.netcore.platforms.nuspec",
         "runtime.json"
+      ]
+    },
+    "Microsoft.Toolkit.Uwp.PlatformSpecificAnalyzer/6.1.1": {
+      "sha512": "uOmcLIHkQ9iCGd+u0qXvvvTB0wwosLAK2GCIH9wyCZulOYlYVMvtTe10/fpIvvr8kLpYrov7XRFUaaS3NA9pvA==",
+      "type": "package",
+      "path": "microsoft.toolkit.uwp.platformspecificanalyzer/6.1.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "analyzers/dotnet/cs/Microsoft.Toolkit.Uwp.PlatformSpecificAnalyzer.dll",
+        "analyzers/dotnet/vb/Microsoft.Toolkit.Uwp.PlatformSpecificAnalyzer.dll",
+        "microsoft.toolkit.uwp.platformspecificanalyzer.6.1.1.nupkg.sha512",
+        "microsoft.toolkit.uwp.platformspecificanalyzer.nuspec",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
       ]
     },
     "NETStandard.Library/2.0.3": {
@@ -175,6 +194,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "Microsoft.Toolkit.Uwp.PlatformSpecificAnalyzer >= 6.1.1",
       "NETStandard.Library >= 2.0.3"
     ]
   },
@@ -221,6 +241,10 @@
       "netstandard2.0": {
         "targetAlias": "netstandard2.0",
         "dependencies": {
+          "Microsoft.Toolkit.Uwp.PlatformSpecificAnalyzer": {
+            "target": "Package",
+            "version": "[6.1.1, )"
+          },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
