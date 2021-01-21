@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-20T14:40:19.846</Modified>
+      <Modified>2021-01-21T16:01:45.456</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Penbook.exe">
       <PackagePath>entrypoint\Penbook.exe</PackagePath>
-      <Modified>2021-01-20T14:39:45.723</Modified>
+      <Modified>2021-01-21T16:01:36.127</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Mary\.nuget\packages\google.apis\1.49.0\lib\netstandard2.0\Google.Apis.dll">
       <PackagePath>Google.Apis.dll</PackagePath>
@@ -81,6 +81,30 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.10\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
       <Modified>2020-02-27T17:16:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mary\.nuget\packages\skiasharp\1.68.0\runtimes\win10-x86\nativeassets\uap10.0\libEGL.dll">
+      <PackagePath>libEGL.dll</PackagePath>
+      <Modified>2018-12-02T20:21:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mary\.nuget\packages\skiasharp\1.68.0\runtimes\win10-x86\nativeassets\uap10.0\libGLESv2.dll">
+      <PackagePath>libGLESv2.dll</PackagePath>
+      <Modified>2018-12-02T20:21:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mary\.nuget\packages\skiasharp\1.68.0\runtimes\win10-x86\nativeassets\uap10.0\libSkiaSharp.dll">
+      <PackagePath>libSkiaSharp.dll</PackagePath>
+      <Modified>2018-12-02T20:21:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mary\.nuget\packages\skiasharp\1.68.0\lib\uap10.0\SkiaSharp.dll">
+      <PackagePath>SkiaSharp.dll</PackagePath>
+      <Modified>2018-12-02T20:21:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mary\.nuget\packages\spire.pdf\7.1.10\lib\netstandard2.0\Spire.License.dll">
+      <PackagePath>Spire.License.dll</PackagePath>
+      <Modified>2021-01-06T00:45:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mary\.nuget\packages\spire.pdf\7.1.10\lib\netstandard2.0\Spire.Pdf.dll">
+      <PackagePath>Spire.Pdf.dll</PackagePath>
+      <Modified>2021-01-15T01:00:42.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Mary\.nuget\packages\system.runtime.compilerservices.unsafe\4.5.3\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
       <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
@@ -146,35 +170,35 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-01-20T14:39:43.289</Modified>
+      <Modified>2021-01-21T16:01:32.045</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Styles\CommandBar.xbf">
       <PackagePath>Styles\CommandBar.xbf</PackagePath>
-      <Modified>2021-01-20T14:39:43.288</Modified>
+      <Modified>2021-01-21T16:01:32.044</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Styles\Page.xbf">
       <PackagePath>Styles\Page.xbf</PackagePath>
-      <Modified>2021-01-20T14:39:43.288</Modified>
+      <Modified>2021-01-21T16:01:32.044</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Styles\_Colors.xbf">
       <PackagePath>Styles\_Colors.xbf</PackagePath>
-      <Modified>2021-01-20T14:39:43.289</Modified>
+      <Modified>2021-01-21T16:01:32.044</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Styles\_FontSizes.xbf">
       <PackagePath>Styles\_FontSizes.xbf</PackagePath>
-      <Modified>2021-01-20T14:39:43.289</Modified>
+      <Modified>2021-01-21T16:01:32.044</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Styles\_Thickness.xbf">
       <PackagePath>Styles\_Thickness.xbf</PackagePath>
-      <Modified>2021-01-20T14:39:43.289</Modified>
+      <Modified>2021-01-21T16:01:32.044</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Styles\TextBlock.xbf">
       <PackagePath>Styles\TextBlock.xbf</PackagePath>
-      <Modified>2021-01-20T14:39:43.289</Modified>
+      <Modified>2021-01-21T16:01:32.045</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Views\InkDrawPage.xbf">
       <PackagePath>Views\InkDrawPage.xbf</PackagePath>
-      <Modified>2021-01-20T14:39:43.288</Modified>
+      <Modified>2021-01-21T16:01:32.043</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -182,11 +206,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-01-20T14:40:01.635</Modified>
+      <Modified>2021-01-21T15:38:51.290</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Core\Penbook.exe">
       <PackagePath>Penbook.exe</PackagePath>
-      <Modified>2021-01-20T14:40:18.976</Modified>
+      <Modified>2021-01-21T16:01:45.262</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

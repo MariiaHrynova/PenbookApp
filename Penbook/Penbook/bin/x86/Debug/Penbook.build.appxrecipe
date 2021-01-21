@@ -61,6 +61,24 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.10\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mary\.nuget\packages\skiasharp\1.68.0\runtimes\win10-x86\nativeassets\uap10.0\libEGL.dll">
+      <PackagePath>libEGL.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mary\.nuget\packages\skiasharp\1.68.0\runtimes\win10-x86\nativeassets\uap10.0\libGLESv2.dll">
+      <PackagePath>libGLESv2.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mary\.nuget\packages\skiasharp\1.68.0\runtimes\win10-x86\nativeassets\uap10.0\libSkiaSharp.dll">
+      <PackagePath>libSkiaSharp.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mary\.nuget\packages\skiasharp\1.68.0\lib\uap10.0\SkiaSharp.dll">
+      <PackagePath>SkiaSharp.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mary\.nuget\packages\spire.pdf\7.1.10\lib\netstandard2.0\Spire.License.dll">
+      <PackagePath>Spire.License.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mary\.nuget\packages\spire.pdf\7.1.10\lib\netstandard2.0\Spire.Pdf.dll">
+      <PackagePath>Spire.Pdf.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Mary\.nuget\packages\system.runtime.compilerservices.unsafe\4.5.3\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
       <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
     </AppxPackagedFile>

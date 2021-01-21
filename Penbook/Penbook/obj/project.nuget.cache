@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "T0yLsK6iGZdxwf8ws+A7QBB9OroXfTDfBOszHEuDe6lRT2ra1fzu9mIxZ3rOVynKq1VevJOrmweJzNMVJEvwcw==",
+  "dgSpecHash": "6lBVZoVsrqAhWYC6xt8w8oT14+6QniqD3BKQbR8ZGfZhazG2/Y3ORvmb9qFQG51KhS9VZqK6Jo2aKyIc+p70jA==",
   "success": true,
   "projectFilePath": "C:\\GitHub\\PenbookApp\\Penbook\\Penbook\\Penbook.csproj",
   "expectedPackageFiles": [
@@ -36,8 +36,12 @@
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.net.native.sharedlibrary\\2.2.7-rel-28605-00\\runtime.win10-x86.microsoft.net.native.sharedlibrary.2.2.7-rel-28605-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\\2.2.10\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk.2.2.10.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\\6.2.10\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform.6.2.10.nupkg.sha512",
+    "C:\\Users\\Mary\\.nuget\\packages\\skiasharp\\1.68.0\\skiasharp.1.68.0.nupkg.sha512",
+    "C:\\Users\\Mary\\.nuget\\packages\\spire.pdf\\7.1.10\\spire.pdf.7.1.10.nupkg.sha512",
+    "C:\\Users\\Mary\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\Mary\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\Mary\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.3\\system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512",
+    "C:\\Users\\Mary\\.nuget\\packages\\system.text.encoding.codepages\\4.5.0\\system.text.encoding.codepages.4.5.0.nupkg.sha512",
     "C:\\Users\\Mary\\.nuget\\packages\\win2d.uwp\\1.25.0\\win2d.uwp.1.25.0.nupkg.sha512"
   ],
   "logs": []

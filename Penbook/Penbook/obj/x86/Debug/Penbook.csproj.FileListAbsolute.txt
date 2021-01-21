@@ -162,3 +162,11 @@ C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Google.Apis.Core.dll
 C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Google.Apis.Core.pdb
 C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Google.Apis.Drive.v3.dll
 C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Google.Apis.Drive.v3.pdb
+C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\libEGL.dll
+C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\libGLESv2.dll
+C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\libSkiaSharp.dll
+C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\SkiaSharp.dll
+C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Spire.License.dll
+C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Spire.Pdf.dll
+C:\GitHub\PenbookApp\Penbook\Penbook\obj\x86\Debug\Spire.Pdf\en-US\Spire.Pdf.Implementation.Graphics.Figures.RTF.RichTextBoxExt.resw
+C:\GitHub\PenbookApp\Penbook\Penbook\obj\x86\Debug\Spire.Pdf\en-US\Spire.Pdf.Implementation.HtmlToPdf.HtmlConverter.HtmlConverter.resw

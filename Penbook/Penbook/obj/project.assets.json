@@ -407,6 +407,100 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
+      "SkiaSharp/1.68.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SkiaSharp.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/osx/native/libSkiaSharp.dylib": {
+            "assetType": "native",
+            "rid": "osx"
+          },
+          "runtimes/tizen-armel/native/libSkiaSharp.so": {
+            "assetType": "native",
+            "rid": "tizen-armel"
+          },
+          "runtimes/tizen-x86/native/libSkiaSharp.so": {
+            "assetType": "native",
+            "rid": "tizen-x86"
+          },
+          "runtimes/win-x64/native/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win10-arm/nativeassets/uap10.0/libEGL.dll": {
+            "assetType": "native",
+            "rid": "win10-arm"
+          },
+          "runtimes/win10-arm/nativeassets/uap10.0/libGLESv2.dll": {
+            "assetType": "native",
+            "rid": "win10-arm"
+          },
+          "runtimes/win10-arm/nativeassets/uap10.0/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win10-arm"
+          },
+          "runtimes/win10-x64/nativeassets/uap10.0/libEGL.dll": {
+            "assetType": "native",
+            "rid": "win10-x64"
+          },
+          "runtimes/win10-x64/nativeassets/uap10.0/libGLESv2.dll": {
+            "assetType": "native",
+            "rid": "win10-x64"
+          },
+          "runtimes/win10-x64/nativeassets/uap10.0/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win10-x64"
+          },
+          "runtimes/win10-x86/nativeassets/uap10.0/libEGL.dll": {
+            "assetType": "native",
+            "rid": "win10-x86"
+          },
+          "runtimes/win10-x86/nativeassets/uap10.0/libGLESv2.dll": {
+            "assetType": "native",
+            "rid": "win10-x86"
+          },
+          "runtimes/win10-x86/nativeassets/uap10.0/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win10-x86"
+          }
+        }
+      },
+      "Spire.PDF/7.1.10": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "1.68.0",
+          "System.Buffers": "4.5.0",
+          "System.Memory": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.0",
+          "System.Text.Encoding.CodePages": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Spire.License.dll": {},
+          "lib/netstandard2.0/Spire.Pdf.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Spire.License.dll": {},
+          "lib/netstandard2.0/Spire.Pdf.dll": {}
+        }
+      },
+      "System.Buffers/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
+        }
+      },
       "System.Memory/4.5.4": {
         "type": "package",
         "dependencies": {
@@ -426,6 +520,21 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Text.Encoding.CodePages/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Text.Encoding.CodePages.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
         }
       },
       "Win2D.uwp/1.25.0": {
@@ -1057,6 +1166,47 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
+      "SkiaSharp/1.68.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SkiaSharp.dll": {}
+        },
+        "native": {
+          "runtimes/win10-arm/nativeassets/uap10.0/libEGL.dll": {},
+          "runtimes/win10-arm/nativeassets/uap10.0/libGLESv2.dll": {},
+          "runtimes/win10-arm/nativeassets/uap10.0/libSkiaSharp.dll": {}
+        }
+      },
+      "Spire.PDF/7.1.10": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "1.68.0",
+          "System.Buffers": "4.5.0",
+          "System.Memory": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.0",
+          "System.Text.Encoding.CodePages": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Spire.License.dll": {},
+          "lib/netstandard2.0/Spire.Pdf.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Spire.License.dll": {},
+          "lib/netstandard2.0/Spire.Pdf.dll": {}
+        }
+      },
+      "System.Buffers/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
+        }
+      },
       "System.Memory/4.5.4": {
         "type": "package",
         "dependencies": {
@@ -1076,6 +1226,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Text.Encoding.CodePages/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Text.Encoding.CodePages.dll": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {}
         }
       },
       "Win2D.uwp/1.25.0": {
@@ -1693,6 +1852,47 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
+      "SkiaSharp/1.68.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SkiaSharp.dll": {}
+        },
+        "native": {
+          "runtimes/win10-arm/nativeassets/uap10.0/libEGL.dll": {},
+          "runtimes/win10-arm/nativeassets/uap10.0/libGLESv2.dll": {},
+          "runtimes/win10-arm/nativeassets/uap10.0/libSkiaSharp.dll": {}
+        }
+      },
+      "Spire.PDF/7.1.10": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "1.68.0",
+          "System.Buffers": "4.5.0",
+          "System.Memory": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.0",
+          "System.Text.Encoding.CodePages": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Spire.License.dll": {},
+          "lib/netstandard2.0/Spire.Pdf.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Spire.License.dll": {},
+          "lib/netstandard2.0/Spire.Pdf.dll": {}
+        }
+      },
+      "System.Buffers/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
+        }
+      },
       "System.Memory/4.5.4": {
         "type": "package",
         "dependencies": {
@@ -1712,6 +1912,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Text.Encoding.CodePages/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Text.Encoding.CodePages.dll": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {}
         }
       },
       "Win2D.uwp/1.25.0": {
@@ -2329,6 +2538,42 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
+      "SkiaSharp/1.68.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SkiaSharp.dll": {}
+        }
+      },
+      "Spire.PDF/7.1.10": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "1.68.0",
+          "System.Buffers": "4.5.0",
+          "System.Memory": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.0",
+          "System.Text.Encoding.CodePages": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Spire.License.dll": {},
+          "lib/netstandard2.0/Spire.Pdf.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Spire.License.dll": {},
+          "lib/netstandard2.0/Spire.Pdf.dll": {}
+        }
+      },
+      "System.Buffers/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
+        }
+      },
       "System.Memory/4.5.4": {
         "type": "package",
         "dependencies": {
@@ -2348,6 +2593,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Text.Encoding.CodePages/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Text.Encoding.CodePages.dll": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {}
         }
       },
       "Win2D.uwp/1.25.0": {
@@ -2964,6 +3218,47 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
+      "SkiaSharp/1.68.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SkiaSharp.dll": {}
+        },
+        "native": {
+          "runtimes/win10-x64/nativeassets/uap10.0/libEGL.dll": {},
+          "runtimes/win10-x64/nativeassets/uap10.0/libGLESv2.dll": {},
+          "runtimes/win10-x64/nativeassets/uap10.0/libSkiaSharp.dll": {}
+        }
+      },
+      "Spire.PDF/7.1.10": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "1.68.0",
+          "System.Buffers": "4.5.0",
+          "System.Memory": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.0",
+          "System.Text.Encoding.CodePages": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Spire.License.dll": {},
+          "lib/netstandard2.0/Spire.Pdf.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Spire.License.dll": {},
+          "lib/netstandard2.0/Spire.Pdf.dll": {}
+        }
+      },
+      "System.Buffers/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
+        }
+      },
       "System.Memory/4.5.4": {
         "type": "package",
         "dependencies": {
@@ -2983,6 +3278,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Text.Encoding.CodePages/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Text.Encoding.CodePages.dll": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {}
         }
       },
       "Win2D.uwp/1.25.0": {
@@ -3600,6 +3904,47 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
+      "SkiaSharp/1.68.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SkiaSharp.dll": {}
+        },
+        "native": {
+          "runtimes/win10-x64/nativeassets/uap10.0/libEGL.dll": {},
+          "runtimes/win10-x64/nativeassets/uap10.0/libGLESv2.dll": {},
+          "runtimes/win10-x64/nativeassets/uap10.0/libSkiaSharp.dll": {}
+        }
+      },
+      "Spire.PDF/7.1.10": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "1.68.0",
+          "System.Buffers": "4.5.0",
+          "System.Memory": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.0",
+          "System.Text.Encoding.CodePages": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Spire.License.dll": {},
+          "lib/netstandard2.0/Spire.Pdf.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Spire.License.dll": {},
+          "lib/netstandard2.0/Spire.Pdf.dll": {}
+        }
+      },
+      "System.Buffers/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
+        }
+      },
       "System.Memory/4.5.4": {
         "type": "package",
         "dependencies": {
@@ -3619,6 +3964,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Text.Encoding.CodePages/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Text.Encoding.CodePages.dll": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {}
         }
       },
       "Win2D.uwp/1.25.0": {
@@ -4235,6 +4589,47 @@
           "runtimes/win10-x86/nativeassets/uap10.0.15138/clrcompression.dll": {}
         }
       },
+      "SkiaSharp/1.68.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SkiaSharp.dll": {}
+        },
+        "native": {
+          "runtimes/win10-x86/nativeassets/uap10.0/libEGL.dll": {},
+          "runtimes/win10-x86/nativeassets/uap10.0/libGLESv2.dll": {},
+          "runtimes/win10-x86/nativeassets/uap10.0/libSkiaSharp.dll": {}
+        }
+      },
+      "Spire.PDF/7.1.10": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "1.68.0",
+          "System.Buffers": "4.5.0",
+          "System.Memory": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.0",
+          "System.Text.Encoding.CodePages": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Spire.License.dll": {},
+          "lib/netstandard2.0/Spire.Pdf.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Spire.License.dll": {},
+          "lib/netstandard2.0/Spire.Pdf.dll": {}
+        }
+      },
+      "System.Buffers/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
+        }
+      },
       "System.Memory/4.5.4": {
         "type": "package",
         "dependencies": {
@@ -4254,6 +4649,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Text.Encoding.CodePages/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Text.Encoding.CodePages.dll": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {}
         }
       },
       "Win2D.uwp/1.25.0": {
@@ -4871,6 +5275,47 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
+      "SkiaSharp/1.68.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SkiaSharp.dll": {}
+        },
+        "native": {
+          "runtimes/win10-x86/nativeassets/uap10.0/libEGL.dll": {},
+          "runtimes/win10-x86/nativeassets/uap10.0/libGLESv2.dll": {},
+          "runtimes/win10-x86/nativeassets/uap10.0/libSkiaSharp.dll": {}
+        }
+      },
+      "Spire.PDF/7.1.10": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "1.68.0",
+          "System.Buffers": "4.5.0",
+          "System.Memory": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.0",
+          "System.Text.Encoding.CodePages": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Spire.License.dll": {},
+          "lib/netstandard2.0/Spire.Pdf.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Spire.License.dll": {},
+          "lib/netstandard2.0/Spire.Pdf.dll": {}
+        }
+      },
+      "System.Buffers/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
+        }
+      },
       "System.Memory/4.5.4": {
         "type": "package",
         "dependencies": {
@@ -4890,6 +5335,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Text.Encoding.CodePages/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Text.Encoding.CodePages.dll": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {}
         }
       },
       "Win2D.uwp/1.25.0": {
@@ -9594,6 +10048,119 @@
         "runtimes/win10-x86/nativeassets/uap10.0.15138/clrcompression.dll"
       ]
     },
+    "SkiaSharp/1.68.0": {
+      "sha512": "ptuxAKk9FiClNnAgWM8hVMCYw/B0hUJWZ8W6efnIAtJmJn/Xl4jvxxDF5WOqfQYCLVzxXw5gvBPVxvTLblFp0g==",
+      "type": "package",
+      "path": "skiasharp/1.68.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/net45/SkiaSharp.targets",
+        "build/tizen40/SkiaSharp.targets",
+        "lib/MonoAndroid/SkiaSharp.dll",
+        "lib/MonoAndroid/SkiaSharp.xml",
+        "lib/Xamarin.Mac20/SkiaSharp.dll",
+        "lib/Xamarin.Mac20/SkiaSharp.xml",
+        "lib/Xamarin.TVOS/SkiaSharp.dll",
+        "lib/Xamarin.TVOS/SkiaSharp.xml",
+        "lib/Xamarin.WatchOS/SkiaSharp.dll",
+        "lib/Xamarin.WatchOS/SkiaSharp.xml",
+        "lib/Xamarin.iOS/SkiaSharp.dll",
+        "lib/Xamarin.iOS/SkiaSharp.xml",
+        "lib/net45/SkiaSharp.dll",
+        "lib/net45/SkiaSharp.xml",
+        "lib/netstandard1.3/SkiaSharp.dll",
+        "lib/netstandard1.3/SkiaSharp.xml",
+        "lib/tizen40/SkiaSharp.dll",
+        "lib/tizen40/SkiaSharp.xml",
+        "lib/uap10.0/SkiaSharp.dll",
+        "lib/uap10.0/SkiaSharp.xml",
+        "runtimes/osx/native/libSkiaSharp.dylib",
+        "runtimes/tizen-armel/native/libSkiaSharp.so",
+        "runtimes/tizen-x86/native/libSkiaSharp.so",
+        "runtimes/win-x64/native/libSkiaSharp.dll",
+        "runtimes/win-x86/native/libSkiaSharp.dll",
+        "runtimes/win10-arm/nativeassets/uap10.0/libEGL.dll",
+        "runtimes/win10-arm/nativeassets/uap10.0/libGLESv2.dll",
+        "runtimes/win10-arm/nativeassets/uap10.0/libSkiaSharp.dll",
+        "runtimes/win10-x64/nativeassets/uap10.0/libEGL.dll",
+        "runtimes/win10-x64/nativeassets/uap10.0/libGLESv2.dll",
+        "runtimes/win10-x64/nativeassets/uap10.0/libSkiaSharp.dll",
+        "runtimes/win10-x86/nativeassets/uap10.0/libEGL.dll",
+        "runtimes/win10-x86/nativeassets/uap10.0/libGLESv2.dll",
+        "runtimes/win10-x86/nativeassets/uap10.0/libSkiaSharp.dll",
+        "skiasharp.1.68.0.nupkg.sha512",
+        "skiasharp.nuspec",
+        "xamarin.interactive/SkiaSharp.Workbooks.dll"
+      ]
+    },
+    "Spire.PDF/7.1.10": {
+      "sha512": "p7MwZ0gcO1NAFyYxMqwbfcO/tIUsmKd+wiEXd27JXJRzHuyWktU4bk3rVkAaHMNsTz9B79s8zfaA5V/R2vv+1g==",
+      "type": "package",
+      "path": "spire.pdf/7.1.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid/Spire.License.dll",
+        "lib/MonoAndroid/Spire.License.xml",
+        "lib/MonoAndroid/Spire.Pdf.dll",
+        "lib/MonoAndroid/Spire.Pdf.xml",
+        "lib/net20/Spire.License.dll",
+        "lib/net20/Spire.License.xml",
+        "lib/net20/Spire.Pdf.XML",
+        "lib/net20/Spire.Pdf.dll",
+        "lib/net40/Spire.License.dll",
+        "lib/net40/Spire.License.xml",
+        "lib/net40/Spire.Pdf.XML",
+        "lib/net40/Spire.Pdf.dll",
+        "lib/net5.0/Spire.License.dll",
+        "lib/net5.0/Spire.License.xml",
+        "lib/net5.0/Spire.Pdf.dll",
+        "lib/net5.0/Spire.Pdf.xml",
+        "lib/netstandard2.0/Spire.License.dll",
+        "lib/netstandard2.0/Spire.License.xml",
+        "lib/netstandard2.0/Spire.Pdf.dll",
+        "lib/netstandard2.0/Spire.Pdf.xml",
+        "lib/xamarinios/Spire.License.dll",
+        "lib/xamarinios/Spire.License.xml",
+        "lib/xamarinios/Spire.Pdf.dll",
+        "lib/xamarinios/Spire.Pdf.xml",
+        "license.txt",
+        "spire.pdf.7.1.10.nupkg.sha512",
+        "spire.pdf.nuspec"
+      ]
+    },
+    "System.Buffers/4.5.0": {
+      "sha512": "pL2ChpaRRWI/p4LXyy4RgeWlYF2sgfj/pnVMvBqwNFr5cXg7CXNnWZWxrOONLg8VGdFB8oB+EG2Qw4MLgTOe+A==",
+      "type": "package",
+      "path": "system.buffers/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.1/System.Buffers.dll",
+        "lib/netstandard1.1/System.Buffers.xml",
+        "lib/netstandard2.0/System.Buffers.dll",
+        "lib/netstandard2.0/System.Buffers.xml",
+        "lib/uap10.0.16299/_._",
+        "ref/net45/System.Buffers.dll",
+        "ref/net45/System.Buffers.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.1/System.Buffers.dll",
+        "ref/netstandard1.1/System.Buffers.xml",
+        "ref/netstandard2.0/System.Buffers.dll",
+        "ref/netstandard2.0/System.Buffers.xml",
+        "ref/uap10.0.16299/_._",
+        "system.buffers.4.5.0.nupkg.sha512",
+        "system.buffers.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.Memory/4.5.4": {
       "sha512": "1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
       "type": "package",
@@ -9646,6 +10213,54 @@
         "version.txt"
       ]
     },
+    "System.Text.Encoding.CodePages/4.5.0": {
+      "sha512": "S0wEUiKcLvRlkFUXca8uio1UQ5bYQzYgOmOKtCqaBQC3GR9AJjh43otcM32IGsAyvadFTaAMw9Irm6dS4Evfng==",
+      "type": "package",
+      "path": "system.text.encoding.codepages/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Text.Encoding.CodePages.dll",
+        "lib/net461/System.Text.Encoding.CodePages.dll",
+        "lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
+        "lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/netstandard1.3/System.Text.Encoding.CodePages.dll",
+        "ref/netstandard1.3/System.Text.Encoding.CodePages.xml",
+        "ref/netstandard1.3/de/System.Text.Encoding.CodePages.xml",
+        "ref/netstandard1.3/es/System.Text.Encoding.CodePages.xml",
+        "ref/netstandard1.3/fr/System.Text.Encoding.CodePages.xml",
+        "ref/netstandard1.3/it/System.Text.Encoding.CodePages.xml",
+        "ref/netstandard1.3/ja/System.Text.Encoding.CodePages.xml",
+        "ref/netstandard1.3/ko/System.Text.Encoding.CodePages.xml",
+        "ref/netstandard1.3/ru/System.Text.Encoding.CodePages.xml",
+        "ref/netstandard1.3/zh-hans/System.Text.Encoding.CodePages.xml",
+        "ref/netstandard1.3/zh-hant/System.Text.Encoding.CodePages.xml",
+        "ref/netstandard2.0/System.Text.Encoding.CodePages.dll",
+        "ref/netstandard2.0/System.Text.Encoding.CodePages.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/win/lib/net461/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
+        "system.text.encoding.codepages.4.5.0.nupkg.sha512",
+        "system.text.encoding.codepages.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "Win2D.uwp/1.25.0": {
       "sha512": "Gll0bGN1DvRpRf2PsxPtrFECfLel2BJhRwSiBaG6GQH+2RypCaR7e9lZXasN5d1ppUlqmza1OiexJ34QBPl5RA==",
       "type": "package",
@@ -9689,6 +10304,7 @@
       "Microsoft.Toolkit.Uwp.PlatformSpecificAnalyzer >= 6.1.1",
       "Microsoft.Xaml.Behaviors.Uwp.Managed >= 2.0.1",
       "Penbook.Core >= 1.0.0",
+      "Spire.PDF >= 7.1.10",
       "Win2D.uwp >= 1.25.0"
     ]
   },
@@ -9752,6 +10368,10 @@
           "Microsoft.Xaml.Behaviors.Uwp.Managed": {
             "target": "Package",
             "version": "[2.0.1, )"
+          },
+          "Spire.PDF": {
+            "target": "Package",
+            "version": "[7.1.10, )"
           },
           "Win2D.uwp": {
             "target": "Package",

@@ -32,6 +32,7 @@ namespace Penbook.ViewModels
         private ICommand loadInkFileCommand;
         private ICommand saveInkFileCommand;
         private ICommand exportAsImageCommand;
+        private ICommand exportAsPdfCommand;
         private ICommand clearAllCommand;
         private ICommand printCommand;
         private ICommand saveOnCloudStorageCommand;
@@ -124,9 +125,11 @@ namespace Penbook.ViewModels
             ?? (zoomInCommand = new RelayCommand(() => _zoomService?.ZoomIn()));
 
         public ICommand ZoomOutCommand => zoomOutCommand
-            ?? (zoomOutCommand = new RelayCommand(() => _zoomService?.ZoomOut()));  
+            ?? (zoomOutCommand = new RelayCommand(() => _zoomService?.ZoomOut()));
+
         public ICommand LoadImageFileCommand => loadImageFileCommand
           ?? (loadImageFileCommand = new RelayCommand(async () => await LoadImageFileAsync()));
+
         public ICommand LoadPdfFileCommand => loadPdfFileCommand
          ?? (loadPdfFileCommand = new RelayCommand(async () => await LoadPdfFileAsync()));
 
@@ -138,6 +141,9 @@ namespace Penbook.ViewModels
 
         public ICommand ExportAsImageCommand => exportAsImageCommand
            ?? (exportAsImageCommand = new RelayCommand(async () => await ExportAsImageAsync(), CanExportAsImage));
+
+        public ICommand ExportAsPdfCommand => exportAsPdfCommand
+          ?? (exportAsPdfCommand = new RelayCommand(async () => await ExportAsPdfAsync(), CanExportAsImage));
 
         public ICommand PrintCommand => printCommand
            ?? (printCommand = new RelayCommand(async () => await PrintAsync(), CanPrint));
@@ -222,6 +228,12 @@ namespace Penbook.ViewModels
             await _fileService?.ExportToImageAsync();
         }
 
+        private async Task ExportAsPdfAsync()
+        {
+            ClearSelection();
+            await _fileService?.ExportToPdfAsync();
+        }
+
         private async Task PrintAsync()
         {
             ClearSelection();
@@ -246,7 +258,7 @@ namespace Penbook.ViewModels
 
         private bool CanRedo() => _undoRedoService != null && _undoRedoService.CanRedo;
 
-        private bool CanSaveInkFile() => _strokeService != null && _strokeService.GetStrokes().Any() && _fileService.IsImageNotNull();
+        private bool CanSaveInkFile() => _strokeService != null && _strokeService.GetStrokes().Any() && _fileService.IsImageNull();
 
         private bool CanExportAsImage() => _strokeService != null && _strokeService.GetStrokes().Any();
 

@@ -1,10 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Threading.Tasks;
 
 using Microsoft.Graphics.Canvas;
+using Spire.Pdf;
+using Spire.Pdf.Graphics;
+using Spire.Pdf.Grid;
 using Windows.Data.Pdf;
 using Windows.Foundation;
 using Windows.Graphics.Imaging;
@@ -24,7 +28,7 @@ namespace Penbook.Services.Ink
         private readonly Image _image;
         private readonly Grid _grid;
 
-        public bool IsImageNotNull()
+        public bool IsImageNull()
         {
             return _image.Source == null;
         }
@@ -89,7 +93,7 @@ namespace Penbook.Services.Ink
 
             if (file == null) return false;
 
-            var pdfDocument = await PdfDocument.LoadFromFileAsync(file);
+            var pdfDocument = await Windows.Data.Pdf.PdfDocument.LoadFromFileAsync(file);
 
             var page = pdfDocument.GetPage(0);
 
@@ -112,139 +116,66 @@ namespace Penbook.Services.Ink
                 return;
             }
 
-
-            if (_image.Source != null)
+            var savePicker = new FileSavePicker
             {
-                var renderBitmap = new RenderTargetBitmap();
-                await renderBitmap.RenderAsync(_grid);
-
-                IBuffer pixelBuffer = await renderBitmap.GetPixelsAsync();
-                byte[] pixels = pixelBuffer.ToArray();
-
-
-                var stream = new InMemoryRandomAccessStream();
-                var encoder = await BitmapEncoder.CreateAsync(BitmapEncoder.BmpEncoderId, stream);
-
-                encoder.SetPixelData(BitmapPixelFormat.Bgra8, BitmapAlphaMode.Straight, (uint)renderBitmap.PixelWidth, (uint)renderBitmap.PixelHeight, 96, 96,
-            pixels);
-
-                await encoder.FlushAsync();
-                stream.Seek(0);
-
-                CanvasDevice device = CanvasDevice.GetSharedDevice();
-                CanvasRenderTarget renderTarget = new CanvasRenderTarget(device, (int)_inkCanvas.ActualWidth, (int)_inkCanvas.ActualHeight, 96);
-
-                using (var ds = renderTarget.CreateDrawingSession())
-                {
-                    ds.DrawInk(_inkCanvas.InkPresenter.StrokeContainer.GetStrokes());
-                }
-
-
-                _image.Source = renderBitmap;
-
-                var savePicker = new FileSavePicker
-                {
-                    SuggestedStartLocation = PickerLocationId.PicturesLibrary
-                };
-
-                savePicker.FileTypeChoices.Add("", new List<string> { ".png" });
-
-                var file = await savePicker.PickSaveFileAsync();
-
-                if (file == null) return;
-
-                using (var fileStream = await file.OpenAsync(FileAccessMode.ReadWrite))
-                {
-                    await renderTarget.SaveAsync(fileStream, CanvasBitmapFileFormat.Png, 1f);
-                }
-            }
-
-            else
-            {
-                var savePicker = new FileSavePicker
-                {
-                    SuggestedStartLocation = PickerLocationId.PicturesLibrary
-                };
-                var file = await savePicker.PickSaveFileAsync();
-                await _strokesService.SaveInkFileAsync(file);
-            }
-            //BitmapImage inkimage = (BitmapImage)_image.Source;
-            //    StorageFile inputFile = await StorageFile.GetFileFromApplicationUriAsync(inkimage.UriSource);
-            //    CanvasDevice device = CanvasDevice.GetSharedDevice();
-            //    CanvasRenderTarget renderTarget = new CanvasRenderTarget(device, (int)_inkCanvas.ActualWidth, (int)_inkCanvas.ActualHeight, 96);
-            //    using (var ds = renderTarget.CreateDrawingSession())
-            //    {
-            //        var image = await CanvasBitmap.LoadAsync(device, inputFile.Path, 96);
-            //        ds.DrawImage(image);// Draw image firstly
-            //        ds.DrawInk(_inkCanvas.InkPresenter.StrokeContainer.GetStrokes());// Draw the stokes
-            //    }
-
-            //    //Save them to the output.jpg in picture folder
-            //    StorageFolder storageFolder = KnownFolders.SavedPictures;
-            //    //var file = await storageFolder.CreateFileAsync("output.jpg", CreationCollisionOption.ReplaceExisting);
-            //    using (var fileStream = await file.OpenAsync(FileAccessMode.ReadWrite))
-            //    {
-            //        await renderTarget.SaveAsync(fileStream, CanvasBitmapFileFormat.Jpeg, 1f);
-            //    }
-            //}
+                SuggestedStartLocation = PickerLocationId.PicturesLibrary
+            };
+            var file = await savePicker.PickSaveFileAsync();
+            await _strokesService.SaveInkFileAsync(file);
         }
 
 
-        public async Task<StorageFile> ExportToImageAsync(StorageFile imageFile = null)
+        public async Task ExportToImageAsync()
         {
             if (!_strokesService.GetStrokes().Any())
             {
-                return null;
+                return;
             }
 
-            if (imageFile != null)
+            if(_image.Source != null)
             {
-                return await ExportCanvasAndImageAsync(imageFile);
+                await SaveInkWithImage();
             }
             else
-            {
-                return await ExportCanvasAsync();
-            }
+                await ExportCanvasAsync();
+            
         }
 
-        private async Task<StorageFile> ExportCanvasAndImageAsync(StorageFile imageFile)
+        private async Task SaveInkWithImage()
         {
-            var saveFile = await GetImageToSaveAsync();
+            var file = await GetImageToSaveAsync();
 
-            if (saveFile == null)
+            if (file == null)
             {
-                return null;
+                return;
             }
 
-            // Prevent updates to the file until updates are finalized with call to CompleteUpdatesAsync.
-            CachedFileManager.DeferUpdates(saveFile);
 
-            using (var outStream = await saveFile.OpenAsync(FileAccessMode.ReadWrite))
+            var renderBitmap = new RenderTargetBitmap();
+            await renderBitmap.RenderAsync(_grid);
+
+            IBuffer pixelBuffer = await renderBitmap.GetPixelsAsync();
+            byte[] pixels = pixelBuffer.ToArray();
+
+
+            var stream = await file.OpenReadAsync();
+            var encoder = await BitmapEncoder.CreateAsync(BitmapEncoder.BmpEncoderId, stream);
+
+            encoder.SetPixelData(BitmapPixelFormat.Bgra8, BitmapAlphaMode.Straight, (uint)renderBitmap.PixelWidth, (uint)renderBitmap.PixelHeight, 96, 96, pixels);
+
+            //await encoder.FlushAsync();
+            //stream.Seek(0);
+
+            CanvasDevice device = CanvasDevice.GetSharedDevice();
+            CanvasRenderTarget renderTarget = new CanvasRenderTarget(device, (int)_inkCanvas.ActualWidth, (int)_inkCanvas.ActualHeight, 96);
+
+            _image.Source = renderBitmap;
+
+            using (var ds = renderTarget.CreateDrawingSession())
             {
-                var device = CanvasDevice.GetSharedDevice();
-
-                CanvasBitmap canvasbitmap;
-                using (var stream = await imageFile.OpenAsync(FileAccessMode.Read))
-                {
-                    canvasbitmap = await CanvasBitmap.LoadAsync(device, stream);
-                }
-
-                using (var renderTarget = new CanvasRenderTarget(device, (int)_inkCanvas.Width, (int)_inkCanvas.Height, canvasbitmap.Dpi))
-                {
-                    using (CanvasDrawingSession ds = renderTarget.CreateDrawingSession())
-                    {
-                        ds.DrawImage(canvasbitmap, new Rect(0, 0, (int)_inkCanvas.Width, (int)_inkCanvas.Height));
-                        ds.DrawInk(_strokesService.GetStrokes());
-                    }
-
-                    await renderTarget.SaveAsync(outStream, CanvasBitmapFileFormat.Png);
-                }
+                ds.DrawInk(_strokesService.GetStrokes());
             }
 
-            // Finalize write so other apps can update file.
-            await CachedFileManager.CompleteUpdatesAsync(saveFile);
-
-            return saveFile;
         }
 
         private async Task<StorageFile> ExportCanvasAsync()
@@ -277,9 +208,60 @@ namespace Penbook.Services.Ink
             var savePicker = new FileSavePicker();
             savePicker.SuggestedStartLocation = PickerLocationId.PicturesLibrary;
             savePicker.FileTypeChoices.Add("PNG", new List<string>() { ".png" });
+            savePicker.FileTypeChoices.Add("JPG", new List<string>() { ".jpg" });
             var saveFile = await savePicker.PickSaveFileAsync();
 
             return saveFile;
         }
+
+        private async Task<StorageFile> GetPdfToSaveAsync()
+        {
+            var savePicker = new FileSavePicker();
+            savePicker.SuggestedStartLocation = PickerLocationId.PicturesLibrary;
+            savePicker.FileTypeChoices.Add("PDF", new List<string>() { ".pdf" });
+            var saveFile = await savePicker.PickSaveFileAsync();
+
+            return saveFile;
+        }
+
+        public async Task ExportToPdfAsync()
+        {
+            if (!_strokesService.GetStrokes().Any())
+            {
+                return;
+            }
+
+            await SavePDF();
+        }
+
+        private async Task<StorageFile> SavePDF()
+        {
+            var file = await GetPdfToSaveAsync();
+
+            if (file == null)
+            {
+                return null;
+            }
+
+            Spire.Pdf.PdfDocument doc = new Spire.Pdf.PdfDocument();
+
+            PdfPageBase page = doc.Pages.Add();
+
+            PdfGrid grid = new PdfGrid();
+
+            PdfGridCellContentList lst = new PdfGridCellContentList();
+            PdfGridCellContent textAndStyle = new PdfGridCellContent();
+
+            var stream = await file.OpenReadAsync();
+            System.IO.Stream inputStream = stream.AsStream();
+            textAndStyle.Image = PdfImage.FromStream(inputStream);
+
+            lst.List.Add(textAndStyle);
+
+            doc.SaveToFile(file.Name, FileFormat.PDF);
+
+            return file;
+        }
+
     }
 }

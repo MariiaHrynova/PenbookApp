@@ -68,6 +68,7 @@
                     <AppBarButton x:Uid="InkDraw_LoadInkFileButton" Icon="OpenFile" Command="{x:Bind ViewModel.LoadInkFileCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
                     <AppBarButton x:Uid="InkDraw_SaveInkFileButton" Icon="Save" Command="{x:Bind ViewModel.SaveInkFileCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
                     <AppBarButton x:Uid="InkDraw_ExportAsImageButton" Icon="Download" Command="{x:Bind ViewModel.ExportAsImageCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
+                    <AppBarButton x:Uid="InkDraw_ExportAsPdfButton" Icon="Download" Command="{x:Bind ViewModel.ExportAsPdfCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
                     <AppBarButton x:Uid="InkDraw_PrintButton" Icon="Print" Command="{x:Bind ViewModel.PrintCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
                     <AppBarSeparator/>
                     <AppBarButton x:Uid="InkDraw_UploadFileOnCloudButton" Icon="ProtectedDocument" Command="{x:Bind ViewModel.SaveOnCloudStorageCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
@@ -116,6 +117,7 @@
                 <AppBarButton x:Uid="InkDraw_LoadInkFileButton" Icon="OpenFile" Command="{x:Bind ViewModel.LoadInkFileCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
                 <AppBarButton x:Uid="InkDraw_SaveInkFileButton" Icon="Save" Command="{x:Bind ViewModel.SaveInkFileCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
                 <AppBarButton x:Uid="InkDraw_ExportAsImageButton" Icon="Download" Command="{x:Bind ViewModel.ExportAsImageCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
+                <AppBarButton x:Uid="InkDraw_ExportAsPdfButton" Icon="Download" Command="{x:Bind ViewModel.ExportAsPdfCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
                 <AppBarButton x:Uid="InkDraw_PrintButton" Icon="Print" Command="{x:Bind ViewModel.PrintCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
                 <AppBarSeparator/>
                 <AppBarButton x:Uid="InkDraw_UploadFileOnCloudButton" Icon="ProtectedDocument" Command="{x:Bind ViewModel.SaveOnCloudStorageCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />

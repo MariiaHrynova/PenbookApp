@@ -125,6 +125,10 @@
               "target": "Package",
               "version": "[2.0.1, )"
             },
+            "Spire.PDF": {
+              "target": "Package",
+              "version": "[7.1.10, )"
+            },
             "Win2D.uwp": {
               "target": "Package",
               "version": "[1.25.0, )"

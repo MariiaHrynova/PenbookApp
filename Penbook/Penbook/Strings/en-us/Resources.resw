@@ -301,6 +301,18 @@
     <value>Export as image</value>
     <comment>ExportAsImage button automation name property for InkDraw</comment>
   </data>
+  <data name="InkDraw_ExportAsPdfButton.Label" xml:space="preserve">
+    <value>Export as PDF</value>
+    <comment>ExportAsPdf button label property for InkDraw</comment>
+  </data>
+  <data name="InkDraw_ExportAsPdfButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
+    <value>Export as PDF</value>
+    <comment>ExportAsPdf button tooltip property for InkDraw</comment>
+  </data>
+  <data name="InkDraw_ExportAsPdfButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Export as PDF</value>
+    <comment>ExportAsPdf button automation name property for InkDraw</comment>
+  </data>
   <data name="InkDraw_PrintButton.Label" xml:space="preserve">
     <value>Print</value>
     <comment>Print button label property for InkDraw</comment>

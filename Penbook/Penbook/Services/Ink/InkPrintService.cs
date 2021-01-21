@@ -19,7 +19,7 @@ namespace Penbook.Services.Ink
         private readonly InkCanvas inkCanvas;
         private Panel container;
 
-        private IPrintDocumentSource printDocumentSource;
+        ///private IPrintDocumentSource printDocumentSource;
 
         private PrintHelper printHelper;
         public bool CanPrint { get; private set; } = true;
@@ -63,7 +63,7 @@ namespace Penbook.Services.Ink
                     }
                 };
 
-                sourceRequested.SetSource(printDocumentSource);
+                //sourceRequested.SetSource(printDocumentSource);
             });
         }
 
