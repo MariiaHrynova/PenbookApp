@@ -152,8 +152,8 @@ namespace Penbook.ViewModels
            ?? (clearAllCommand = new RelayCommand(ClearAll, CanClearAll));
 
         public ICommand SaveOnCloudStorageCommand => saveOnCloudStorageCommand
-            ?? (saveOnCloudStorageCommand = new RelayCommand(async () => await _cloudService.SaveOnCloudStorage(_cloudService.Authenticate().GetAwaiter().GetResult()), CanLoadOnCloud));
-
+            ?? (saveOnCloudStorageCommand = new RelayCommand(async () => await _cloudService.SaveOnCloudStorage(), CanLoadOnCloud));
+  
         private void Cut()
         {
             _copyPasteService?.Cut();

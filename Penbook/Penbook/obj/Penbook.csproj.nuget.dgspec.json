@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GitHub\\PenbookApp\\Penbook\\Penbook\\Penbook.csproj": {}
+    "C:\\Users\\marii\\GitHub\\PenbookApp\\Penbook\\Penbook\\Penbook.csproj": {}
   },
   "projects": {
-    "C:\\GitHub\\PenbookApp\\Penbook\\Penbook.Core\\Penbook.Core.csproj": {
+    "C:\\Users\\marii\\GitHub\\PenbookApp\\Penbook\\Penbook.Core\\Penbook.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GitHub\\PenbookApp\\Penbook\\Penbook.Core\\Penbook.Core.csproj",
+        "projectUniqueName": "C:\\Users\\marii\\GitHub\\PenbookApp\\Penbook\\Penbook.Core\\Penbook.Core.csproj",
         "projectName": "Penbook.Core",
-        "projectPath": "C:\\GitHub\\PenbookApp\\Penbook\\Penbook.Core\\Penbook.Core.csproj",
-        "packagesPath": "C:\\Users\\Mary\\.nuget\\packages\\",
-        "outputPath": "C:\\GitHub\\PenbookApp\\Penbook\\Penbook.Core\\obj\\",
+        "projectPath": "C:\\Users\\marii\\GitHub\\PenbookApp\\Penbook\\Penbook.Core\\Penbook.Core.csproj",
+        "packagesPath": "C:\\Users\\marii\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marii\\GitHub\\PenbookApp\\Penbook\\Penbook.Core\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Mary\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\marii\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -64,50 +61,58 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\GitHub\\PenbookApp\\Penbook\\Penbook\\Penbook.csproj": {
+    "C:\\Users\\marii\\GitHub\\PenbookApp\\Penbook\\Penbook\\Penbook.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GitHub\\PenbookApp\\Penbook\\Penbook\\Penbook.csproj",
+        "projectUniqueName": "C:\\Users\\marii\\GitHub\\PenbookApp\\Penbook\\Penbook\\Penbook.csproj",
         "projectName": "Penbook",
-        "projectPath": "C:\\GitHub\\PenbookApp\\Penbook\\Penbook\\Penbook.csproj",
-        "packagesPath": "C:\\Users\\Mary\\.nuget\\packages\\",
-        "outputPath": "C:\\GitHub\\PenbookApp\\Penbook\\Penbook\\obj\\",
+        "projectPath": "C:\\Users\\marii\\GitHub\\PenbookApp\\Penbook\\Penbook\\Penbook.csproj",
+        "packagesPath": "C:\\Users\\marii\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marii\\GitHub\\PenbookApp\\Penbook\\Penbook\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Mary\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\marii\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "uap10.0.18362"
+          "uap10.0.17134"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "uap10.0.18362": {
+          "uap10.0.17134": {
             "projectReferences": {
-              "C:\\GitHub\\PenbookApp\\Penbook\\Penbook.Core\\Penbook.Core.csproj": {
-                "projectPath": "C:\\GitHub\\PenbookApp\\Penbook\\Penbook.Core\\Penbook.Core.csproj"
+              "C:\\Users\\marii\\GitHub\\PenbookApp\\Penbook\\Penbook.Core\\Penbook.Core.csproj": {
+                "projectPath": "C:\\Users\\marii\\GitHub\\PenbookApp\\Penbook\\Penbook.Core\\Penbook.Core.csproj"
               }
             }
           }
         }
       },
       "frameworks": {
-        "uap10.0.18362": {
+        "uap10.0.17134": {
           "dependencies": {
             "Google.Apis.Drive.v3": {
               "target": "Package",
               "version": "[1.49.0.2201, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Bcl.Async": {
+              "target": "Package",
+              "version": "[1.0.168, )"
             },
             "Microsoft.NETCore.UniversalWindowsPlatform": {
               "target": "Package",

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>MARY</Machine>
-    <WindowsUser>Mary</WindowsUser>
+    <Machine>HRYNOVA-M</Machine>
+    <WindowsUser>marii</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -10,154 +10,172 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>B65C559C-1EE7-4889-869F-3C7B1B989B41</PackageIdentityName>
     <PackageIdentityPublisher>CN=Mary</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\GitHub\PenbookApp\Penbook\Penbook\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\marii\GitHub\PenbookApp\Penbook\Penbook\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\marii\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\marii\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Penbook.exe">
+    <AppxPackagedFile Include="C:\Users\marii\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Penbook.exe">
       <PackagePath>entrypoint\Penbook.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Mary\.nuget\packages\google.apis\1.49.0\lib\netstandard2.0\Google.Apis.dll">
+    <AppxPackagedFile Include="C:\Users\marii\.nuget\packages\google.apis\1.49.0\lib\netstandard2.0\Google.Apis.dll">
       <PackagePath>Google.Apis.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Mary\.nuget\packages\google.apis.auth\1.49.0\lib\netstandard2.0\Google.Apis.Auth.PlatformServices.dll">
+    <AppxPackagedFile Include="C:\Users\marii\.nuget\packages\google.apis.auth\1.49.0\lib\netstandard2.0\Google.Apis.Auth.PlatformServices.dll">
       <PackagePath>Google.Apis.Auth.PlatformServices.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Mary\.nuget\packages\google.apis.auth\1.49.0\lib\netstandard2.0\Google.Apis.Auth.dll">
+    <AppxPackagedFile Include="C:\Users\marii\.nuget\packages\google.apis.auth\1.49.0\lib\netstandard2.0\Google.Apis.Auth.dll">
       <PackagePath>Google.Apis.Auth.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Mary\.nuget\packages\google.apis.core\1.49.0\lib\netstandard2.0\Google.Apis.Core.dll">
+    <AppxPackagedFile Include="C:\Users\marii\.nuget\packages\google.apis.core\1.49.0\lib\netstandard2.0\Google.Apis.Core.dll">
       <PackagePath>Google.Apis.Core.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Mary\.nuget\packages\google.apis.drive.v3\1.49.0.2201\lib\netstandard2.0\Google.Apis.Drive.v3.dll">
+    <AppxPackagedFile Include="C:\Users\marii\.nuget\packages\google.apis.drive.v3\1.49.0.2201\lib\netstandard2.0\Google.Apis.Drive.v3.dll">
       <PackagePath>Google.Apis.Drive.v3.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Mary\.nuget\packages\microsoft.toolkit\6.1.1\lib\netstandard2.0\Microsoft.Toolkit.dll">
+    <AppxPackagedFile Include="C:\Users\marii\.nuget\packages\microsoft.aspnetcore.http.abstractions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.Abstractions.dll">
+      <PackagePath>Microsoft.AspNetCore.Http.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marii\.nuget\packages\microsoft.aspnetcore.http.features\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.Features.dll">
+      <PackagePath>Microsoft.AspNetCore.Http.Features.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marii\.nuget\packages\microsoft.bcl.async\1.0.168\lib\win8\Microsoft.Threading.Tasks.Extensions.dll">
+      <PackagePath>Microsoft.Threading.Tasks.Extensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marii\.nuget\packages\microsoft.bcl.async\1.0.168\lib\win8\Microsoft.Threading.Tasks.dll">
+      <PackagePath>Microsoft.Threading.Tasks.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marii\.nuget\packages\microsoft.extensions.primitives\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll">
+      <PackagePath>Microsoft.Extensions.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marii\.nuget\packages\microsoft.toolkit\6.1.1\lib\netstandard2.0\Microsoft.Toolkit.dll">
       <PackagePath>Microsoft.Toolkit.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Mary\.nuget\packages\microsoft.toolkit.uwp\6.1.1\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.dll">
+    <AppxPackagedFile Include="C:\Users\marii\.nuget\packages\microsoft.toolkit.uwp\6.1.1\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.dll">
       <PackagePath>Microsoft.Toolkit.Uwp.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Mary\.nuget\packages\microsoft.xaml.behaviors.uwp.managed\2.0.1\lib\uap10.0\Microsoft.Xaml.Interactions.dll">
+    <AppxPackagedFile Include="C:\Users\marii\.nuget\packages\microsoft.xaml.behaviors.uwp.managed\2.0.1\lib\uap10.0\Microsoft.Xaml.Interactions.dll">
       <PackagePath>Microsoft.Xaml.Interactions.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Mary\.nuget\packages\microsoft.xaml.behaviors.uwp.managed\2.0.1\lib\uap10.0\Microsoft.Xaml.Interactivity.dll">
+    <AppxPackagedFile Include="C:\Users\marii\.nuget\packages\microsoft.xaml.behaviors.uwp.managed\2.0.1\lib\uap10.0\Microsoft.Xaml.Interactivity.dll">
       <PackagePath>Microsoft.Xaml.Interactivity.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Mary\.nuget\packages\newtonsoft.json\12.0.3\lib\netstandard2.0\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="C:\Users\marii\.nuget\packages\newtonsoft.json\12.0.3\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.10\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Mary\.nuget\packages\skiasharp\1.68.0\runtimes\win10-x86\nativeassets\uap10.0\libEGL.dll">
+    <AppxPackagedFile Include="C:\Users\marii\.nuget\packages\skiasharp\1.68.0\runtimes\win10-x86\nativeassets\uap10.0\libEGL.dll">
       <PackagePath>libEGL.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Mary\.nuget\packages\skiasharp\1.68.0\runtimes\win10-x86\nativeassets\uap10.0\libGLESv2.dll">
+    <AppxPackagedFile Include="C:\Users\marii\.nuget\packages\skiasharp\1.68.0\runtimes\win10-x86\nativeassets\uap10.0\libGLESv2.dll">
       <PackagePath>libGLESv2.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Mary\.nuget\packages\skiasharp\1.68.0\runtimes\win10-x86\nativeassets\uap10.0\libSkiaSharp.dll">
+    <AppxPackagedFile Include="C:\Users\marii\.nuget\packages\skiasharp\1.68.0\runtimes\win10-x86\nativeassets\uap10.0\libSkiaSharp.dll">
       <PackagePath>libSkiaSharp.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Mary\.nuget\packages\skiasharp\1.68.0\lib\uap10.0\SkiaSharp.dll">
+    <AppxPackagedFile Include="C:\Users\marii\.nuget\packages\skiasharp\1.68.0\lib\uap10.0\SkiaSharp.dll">
       <PackagePath>SkiaSharp.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Mary\.nuget\packages\spire.pdf\7.1.10\lib\netstandard2.0\Spire.License.dll">
+    <AppxPackagedFile Include="C:\Users\marii\.nuget\packages\spire.pdf\7.1.10\lib\netstandard2.0\Spire.License.dll">
       <PackagePath>Spire.License.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Mary\.nuget\packages\spire.pdf\7.1.10\lib\netstandard2.0\Spire.Pdf.dll">
+    <AppxPackagedFile Include="C:\Users\marii\.nuget\packages\spire.pdf\7.1.10\lib\netstandard2.0\Spire.Pdf.dll">
       <PackagePath>Spire.Pdf.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Mary\.nuget\packages\system.runtime.compilerservices.unsafe\4.5.3\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
+    <AppxPackagedFile Include="C:\Users\marii\.nuget\packages\system.runtime.compilerservices.unsafe\4.5.3\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
       <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Mary\.nuget\packages\win2d.uwp\1.25.0\runtimes\win10-x86\native\Microsoft.Graphics.Canvas.dll">
+    <AppxPackagedFile Include="C:\Users\marii\.nuget\packages\system.text.encodings.web\4.5.0\lib\netstandard2.0\System.Text.Encodings.Web.dll">
+      <PackagePath>System.Text.Encodings.Web.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marii\.nuget\packages\win2d.uwp\1.25.0\runtimes\win10-x86\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook.Core\bin\Debug\netstandard2.0\Penbook.Core.dll">
+    <AppxPackagedFile Include="C:\Users\marii\GitHub\PenbookApp\Penbook\Penbook.Core\bin\Debug\netstandard2.0\Penbook.Core.dll">
       <PackagePath>Penbook.Core.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Mary\.nuget\packages\win2d.uwp\1.25.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
+    <AppxPackagedFile Include="C:\Users\marii\.nuget\packages\win2d.uwp\1.25.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.19041.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\marii\GitHub\PenbookApp\Penbook\Penbook\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\marii\GitHub\PenbookApp\Penbook\Penbook\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\marii\GitHub\PenbookApp\Penbook\Penbook\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\marii\GitHub\PenbookApp\Penbook\Penbook\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\marii\GitHub\PenbookApp\Penbook\Penbook\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\marii\GitHub\PenbookApp\Penbook\Penbook\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\marii\GitHub\PenbookApp\Penbook\Penbook\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\marii\GitHub\PenbookApp\Penbook\Penbook\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Penbook.xr.xml">
+    <AppxPackagedFile Include="C:\Users\marii\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Penbook.xr.xml">
       <PackagePath>Penbook.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\marii\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Styles\CommandBar.xbf">
+    <AppxPackagedFile Include="C:\Users\marii\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Styles\CommandBar.xbf">
       <PackagePath>Styles\CommandBar.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Styles\Page.xbf">
+    <AppxPackagedFile Include="C:\Users\marii\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Styles\Page.xbf">
       <PackagePath>Styles\Page.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Styles\_Colors.xbf">
+    <AppxPackagedFile Include="C:\Users\marii\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Styles\_Colors.xbf">
       <PackagePath>Styles\_Colors.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Styles\_FontSizes.xbf">
+    <AppxPackagedFile Include="C:\Users\marii\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Styles\_FontSizes.xbf">
       <PackagePath>Styles\_FontSizes.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Styles\_Thickness.xbf">
+    <AppxPackagedFile Include="C:\Users\marii\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Styles\_Thickness.xbf">
       <PackagePath>Styles\_Thickness.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Styles\TextBlock.xbf">
+    <AppxPackagedFile Include="C:\Users\marii\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Styles\TextBlock.xbf">
       <PackagePath>Styles\TextBlock.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Views\InkDrawPage.xbf">
+    <AppxPackagedFile Include="C:\Users\marii\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Views\InkDrawPage.xbf">
       <PackagePath>Views\InkDrawPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\marii\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Core\Penbook.exe">
+    <AppxPackagedFile Include="C:\Users\marii\GitHub\PenbookApp\Penbook\Penbook\bin\x86\Debug\Core\Penbook.exe">
       <PackagePath>Penbook.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

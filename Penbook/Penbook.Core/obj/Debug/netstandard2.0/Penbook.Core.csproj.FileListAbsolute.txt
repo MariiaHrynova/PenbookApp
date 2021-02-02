@@ -16,3 +16,12 @@ C:\GitHub\PenbookApp\Penbook\Penbook.Core\obj\Debug\netstandard2.0\Penbook.Core.
 C:\GitHub\PenbookApp\Penbook\Penbook.Core\obj\Debug\netstandard2.0\Penbook.Core.csproj.CoreCompileInputs.cache
 C:\GitHub\PenbookApp\Penbook\Penbook.Core\obj\Debug\netstandard2.0\Penbook.Core.dll
 C:\GitHub\PenbookApp\Penbook\Penbook.Core\obj\Debug\netstandard2.0\Penbook.Core.pdb
+C:\Users\marii\GitHub\PenbookApp\Penbook\Penbook.Core\bin\Debug\netstandard2.0\Penbook.Core.deps.json
+C:\Users\marii\GitHub\PenbookApp\Penbook\Penbook.Core\bin\Debug\netstandard2.0\Penbook.Core.dll
+C:\Users\marii\GitHub\PenbookApp\Penbook\Penbook.Core\bin\Debug\netstandard2.0\Penbook.Core.pdb
+C:\Users\marii\GitHub\PenbookApp\Penbook\Penbook.Core\obj\Debug\netstandard2.0\Penbook.Core.csprojAssemblyReference.cache
+C:\Users\marii\GitHub\PenbookApp\Penbook\Penbook.Core\obj\Debug\netstandard2.0\Penbook.Core.AssemblyInfoInputs.cache
+C:\Users\marii\GitHub\PenbookApp\Penbook\Penbook.Core\obj\Debug\netstandard2.0\Penbook.Core.AssemblyInfo.cs
+C:\Users\marii\GitHub\PenbookApp\Penbook\Penbook.Core\obj\Debug\netstandard2.0\Penbook.Core.csproj.CoreCompileInputs.cache
+C:\Users\marii\GitHub\PenbookApp\Penbook\Penbook.Core\obj\Debug\netstandard2.0\Penbook.Core.dll
+C:\Users\marii\GitHub\PenbookApp\Penbook\Penbook.Core\obj\Debug\netstandard2.0\Penbook.Core.pdb

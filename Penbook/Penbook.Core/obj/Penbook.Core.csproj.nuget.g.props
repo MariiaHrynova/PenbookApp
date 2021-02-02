@@ -5,9 +5,9 @@
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Mary\.nuget\packages\;C:\Program Files\dotnet\sdk\NuGetFallbackFolder</NuGetPackageFolders>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\marii\.nuget\packages\</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.8.0</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.8.1</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="$([MSBuild]::EnsureTrailingSlash($(NuGetPackageFolders)))" />
@@ -16,6 +16,6 @@
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgMicrosoft_Toolkit_Uwp_PlatformSpecificAnalyzer Condition=" '$(PkgMicrosoft_Toolkit_Uwp_PlatformSpecificAnalyzer)' == '' ">C:\Users\Mary\.nuget\packages\microsoft.toolkit.uwp.platformspecificanalyzer\6.1.1</PkgMicrosoft_Toolkit_Uwp_PlatformSpecificAnalyzer>
+    <PkgMicrosoft_Toolkit_Uwp_PlatformSpecificAnalyzer Condition=" '$(PkgMicrosoft_Toolkit_Uwp_PlatformSpecificAnalyzer)' == '' ">C:\Users\marii\.nuget\packages\microsoft.toolkit.uwp.platformspecificanalyzer\6.1.1</PkgMicrosoft_Toolkit_Uwp_PlatformSpecificAnalyzer>
   </PropertyGroup>
 </Project>

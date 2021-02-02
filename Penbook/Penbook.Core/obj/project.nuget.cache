@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "9LjZGDeQYAimopLVxJ+W9oxLRxduoWUM1DvLZmO+zCXMXWoY6dNJ/hgMtZhMB0Xc0TCWFubHT0+SITWqSYiyow==",
+  "dgSpecHash": "rXjmOOUWUHGmY9OZ9XIbSOIyEygQP+luy/cLl02npMVDXkBfc55czxMU9wuUL7PMulKQX8c4U4t4cxeIx9rZMw==",
   "success": true,
-  "projectFilePath": "C:\\GitHub\\PenbookApp\\Penbook\\Penbook.Core\\Penbook.Core.csproj",
+  "projectFilePath": "C:\\Users\\marii\\GitHub\\PenbookApp\\Penbook\\Penbook.Core\\Penbook.Core.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Mary\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Mary\\.nuget\\packages\\microsoft.toolkit.uwp.platformspecificanalyzer\\6.1.1\\microsoft.toolkit.uwp.platformspecificanalyzer.6.1.1.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\marii\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\marii\\.nuget\\packages\\microsoft.toolkit.uwp.platformspecificanalyzer\\6.1.1\\microsoft.toolkit.uwp.platformspecificanalyzer.6.1.1.nupkg.sha512",
+    "C:\\Users\\marii\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

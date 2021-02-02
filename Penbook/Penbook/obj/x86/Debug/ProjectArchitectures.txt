@@ -1,1 +1,1 @@
-C:\GitHub\PenbookApp\Penbook\Penbook\Penbook.csproj;x86
+C:\Users\marii\GitHub\PenbookApp\Penbook\Penbook\Penbook.csproj;x86

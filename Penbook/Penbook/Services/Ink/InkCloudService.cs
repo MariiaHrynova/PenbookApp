@@ -3,6 +3,7 @@ using Google.Apis.Drive.v3;
 using Google.Apis.Drive.v3.Data;
 using Google.Apis.Services;
 using Google.Apis.Util.Store;
+using Penbook.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -12,6 +13,7 @@ using System.Net;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using Windows.Security.Authentication.Web;
 using Windows.Storage;
 using Windows.Storage.FileProperties;
 using Windows.Storage.Pickers;
@@ -20,45 +22,96 @@ namespace Penbook.Services.Ink
 {
     public class InkCloudService
     {
-        static string[] Scopes = { DriveService.Scope.DriveReadonly };
         static string ApplicationName = "Penbook";
+        static string clientID = "1053877635062-nisi5mcgg6d6fiknttstkt95ovpa8unr.apps.googleusercontent.com";
+        static string clientSecret = "bZcZJ8RY7wabOZHiKbJ6iK9C";
+        static string redirectURI = "urn:ietf:wg:oauth:2.0:oob";
+        static string authorizationEndpoint = "https://accounts.google.com/o/oauth2/v2/auth";
+        static string scope = "https://www.googleapis.com/auth/drive.appdata";
 
-        public async Task<UserCredential> Authenticate()
+        private string GenerateRandomBase64Url()
         {
-            UserCredential credential;
+            Guid g = Guid.NewGuid();
+            string GuidString = Convert.ToBase64String(g.ToByteArray());
+            GuidString = GuidString.Replace("=", "");
+            GuidString = GuidString.Replace("+", "");
 
-            StorageFile storageFile = await StorageFile.GetFileFromApplicationUriAsync(new Uri("ms-appx:///credentials.json"));
-            var stream = await storageFile.OpenStreamForReadAsync();
-            //var handle = storageFile.CreateSafeFileHandle(options: FileOptions.RandomAccess);
-            //var stream = new FileStream(handle, FileAccess.ReadWrite);
-            
-                    // The file token.json stores the user's access and refresh tokens, and is created
-                    // automatically when the authorization flow completes for the first time.
-                    string credPath = "token.json";
-                    credential = GoogleWebAuthorizationBroker.AuthorizeAsync(
-                        GoogleClientSecrets.Load(stream).Secrets,
-                        Scopes,
-                        "user",
-                        CancellationToken.None,
-                        new FileDataStore(credPath, true)).Result;
-                
-            return credential;
+            return GuidString;
         }
-        public async Task SaveOnCloudStorage(UserCredential credential)
+        public async Task Authenticate()
         {
-            var openPicker = new FileOpenPicker();
-            StorageFile file = await openPicker.PickSingleFileAsync();
+            string state = GenerateRandomBase64Url();
+            string code_verifier = GenerateRandomBase64Url();            
 
-            DriveService driveService = new DriveService(new BaseClientService.Initializer()
+            ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
+            localSettings.Values["state"] = state;
+            localSettings.Values["code_verifier"] = code_verifier;
+
+            string authorizationRequest = string.Format($@"{authorizationEndpoint}?response_type=code&scope={Uri.EscapeDataString(scope)}&redirect_uri={Uri.EscapeDataString(redirectURI)}&client_id={clientID}&state={state}");
+
+            Uri startURI = new Uri(authorizationRequest);
+            Uri endURI = new Uri(redirectURI);
+            string result = string.Empty;
+            try
+            {
+                WebAuthenticationResult webAuthenticationResult = await WebAuthenticationBroker.AuthenticateAsync(WebAuthenticationOptions.None, startURI, endURI);
+                switch (webAuthenticationResult.ResponseStatus)
+                {
+                    // Successful authentication.  
+                    case WebAuthenticationStatus.Success:
+                        result = webAuthenticationResult.ResponseData.ToString();
+                        break;
+                    // HTTP error.  
+                    case WebAuthenticationStatus.ErrorHttp:
+                        result = webAuthenticationResult.ResponseErrorDetail.ToString();
+                        break;
+                    default:
+                        result = webAuthenticationResult.ResponseData.ToString();
+                        break;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                result = ex.Message;
+            }
+        }
+
+        public async Task SaveOnCloudStorage()
+        {
+            await Authenticate();
+
+            UserCredential credential = GoogleWebAuthorizationBroker.AuthorizeAsync(
+                           new ClientSecrets
+                           {
+                               ClientId = clientID,
+                               ClientSecret = clientSecret
+                           },
+                           new string[]{
+                               DriveService.Scope.Drive,
+                               DriveService.Scope.DriveFile
+                           },
+                           Environment.UserName,
+                           CancellationToken.None,
+                           new AppDataFileStore(Windows.ApplicationModel.Package.Current.InstalledLocation.Path)).Result;
+                      
+            //Once consent is recieved, your token will be stored locally on the AppData directory, so that next time you wont be prompted for consent. 
+
+            DriveService service = new DriveService(new BaseClientService.Initializer()
             {
                 HttpClientInitializer = credential,
-                ApplicationName = ApplicationName,
+                ApplicationName = "MyAppName",
             });
+            service.HttpClient.Timeout = TimeSpan.FromMinutes(100);
 
-            List<string> parents = new List<string>();
+            FileSavePicker savePicker = new FileSavePicker();
+            savePicker.SuggestedStartLocation = PickerLocationId.DocumentsLibrary;
+            // Dropdown of file types the user can save the file as
+            savePicker.FileTypeChoices.Add("GIF", new List<string>() { ".gif" });
 
-            if(file != null)
-                await UploadAsync(driveService, parents, file);
+            StorageFile file = await savePicker.PickSaveFileAsync();
+
+             await UploadAsync(service, new string[] { }, file);
         }
         private static async Task<Google.Apis.Drive.v3.Data.File> UploadAsync(DriveService driveService, IList<string> parents, StorageFile file)
         {
